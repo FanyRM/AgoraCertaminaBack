@@ -16,9 +16,6 @@ namespace AgoraCertaminaBack.Models.Entities
         [BsonElement("color"), BsonRepresentation(BsonType.String)]
         public required string Color { get; set; }
 
-        [BsonElement("subcategory"), BsonRepresentation(BsonType.String)]
-        public string? Subcategory { get; set; }
-
         [BsonElement("created_at"), BsonRepresentation(BsonType.DateTime)]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
