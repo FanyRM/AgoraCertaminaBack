@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj": {}
+    "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj": {}
   },
   "projects": {
-    "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj": {
+    "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
+        "projectUniqueName": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
         "projectName": "AgoraCertaminaBack.Services",
-        "projectPath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
-        "packagesPath": "C:\\Users\\bhleo\\.nuget\\packages\\",
-        "outputPath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\obj\\",
+        "projectPath": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
+        "packagesPath": "C:\\Users\\celes\\.nuget\\packages\\",
+        "outputPath": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bhleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\celes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
