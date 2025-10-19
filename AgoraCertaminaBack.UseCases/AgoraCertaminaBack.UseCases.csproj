@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
+    <PackageReference Include="Netmentor.ROP" Version="1.12.0" />
   </ItemGroup>
 
   <ItemGroup>

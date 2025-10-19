@@ -139,9 +139,21 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[3.5.0, )"
+            },
+            "Netmentor.ROP": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [
@@ -296,6 +308,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[9.0.9, )"
+            },
+            "Netmentor.ROP": {
+              "target": "Package",
+              "version": "[1.12.0, )"
             }
           },
           "imports": [
@@ -382,9 +398,25 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "Netmentor.ROP": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "Netmentor.ROP.ApiExtensions": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             }
           },
           "imports": [
