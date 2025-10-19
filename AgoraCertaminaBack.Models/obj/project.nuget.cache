@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tMgzt9XA1+4=",
+  "dgSpecHash": "uLuqktsD7QQ=",
   "success": true,
-  "projectFilePath": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj",
+  "projectFilePath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\celes\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
-    "C:\\Users\\celes\\.nuget\\packages\\mongodb.bson\\3.5.0\\mongodb.bson.3.5.0.nupkg.sha512",
-    "C:\\Users\\celes\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\celes\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\bhleo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\bhleo\\.nuget\\packages\\mongodb.bson\\3.5.0\\mongodb.bson.3.5.0.nupkg.sha512",
+    "C:\\Users\\bhleo\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\bhleo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
