@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoraCertaminaBack", "AgoraCertaminaBack.csproj", "{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoraCertaminaBack.Data", "..\AgoraCertaminaBack.Data\AgoraCertaminaBack.Data.csproj", "{CD829E12-3C4C-4FE9-855F-A05B218D84E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoraCertaminaBack.Models", "..\AgoraCertaminaBack.Models\AgoraCertaminaBack.Models.csproj", "{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoraCertaminaBack.Services", "..\AgoraCertaminaBack.Services\AgoraCertaminaBack.Services.csproj", "{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoraCertaminaBack.UseCases", "..\AgoraCertaminaBack.UseCases\AgoraCertaminaBack.UseCases.csproj", "{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD829E12-3C4C-4FE9-855F-A05B218D84E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD829E12-3C4C-4FE9-855F-A05B218D84E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD829E12-3C4C-4FE9-855F-A05B218D84E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD829E12-3C4C-4FE9-855F-A05B218D84E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00300BFF-3384-4D5D-8E59-87F6240F1653}
+	EndGlobalSection
+EndGlobal

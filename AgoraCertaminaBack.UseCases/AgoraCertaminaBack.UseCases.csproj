@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AgoraCertaminaBack.Data\AgoraCertaminaBack.Data.csproj" />
+    <ProjectReference Include="..\AgoraCertaminaBack.Models\AgoraCertaminaBack.Models.csproj" />
+    <ProjectReference Include="..\AgoraCertaminaBack.Services\AgoraCertaminaBack.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Forms\" />
+    <Folder Include="Contests\" />
+    <Folder Include="Catalogs\" />
+    <Folder Include="Organizations\" />
+    <Folder Include="Tags\" />
+  </ItemGroup>
+
+</Project>
