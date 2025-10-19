@@ -38,6 +38,9 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.UseCases\\OrganizationsUseCases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.UseCases\\UseCasesDependencyInjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -162,7 +165,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T23:26:27.491Z",
               "EditorCaption": ""
@@ -182,6 +185,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "UseCasesDependencyInjection.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.UseCases\\UseCasesDependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.UseCases\\UseCasesDependencyInjection.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.UseCases\\UseCasesDependencyInjection.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.UseCases\\UseCasesDependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T02:14:21.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ServicesDependencyInjection.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
@@ -193,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MongoDbContext.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\MongoDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\MongoDbContext.cs",
@@ -205,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MongoDBSettings.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Settings\\MongoDBSettings.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Settings\\MongoDBSettings.cs",
@@ -217,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IMongoDbSettings.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Settings\\IMongoDbSettings.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Settings\\IMongoDbSettings.cs",
@@ -229,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MongoRepository.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Repository\\MongoRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Repository\\MongoRepository.cs",
@@ -241,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DataDependencyInjection.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\DataDependencyInjection.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\DataDependencyInjection.cs",
@@ -253,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IMongoRepository.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Repository\\IMongoRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Data\\Repository\\IMongoRepository.cs",
@@ -265,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Catalog.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Catalog.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Catalog.cs",
@@ -277,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "FieldValue.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\FieldValue.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\FieldValue.cs",
@@ -289,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Contest.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
@@ -301,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "TagEnum.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\DTOs\\Tag\\TagEnum.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\DTOs\\Tag\\TagEnum.cs",
@@ -313,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Tag.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Tag.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Tag.cs",
@@ -325,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Field.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Field.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Field.cs",
@@ -337,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "SchemaContest.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\SchemaContest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\SchemaContest.cs",
@@ -361,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ICustomerAttribute.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Interfaces\\ICustomerAttribute.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Interfaces\\ICustomerAttribute.cs",
@@ -384,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "IEntity.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Interfaces\\IEntity.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\Entities\\Interfaces\\IEntity.cs",
@@ -396,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "FieldTypeEnum.cs",
               "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\General\\FieldTypeEnum.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack.Models\\General\\FieldTypeEnum.cs",
