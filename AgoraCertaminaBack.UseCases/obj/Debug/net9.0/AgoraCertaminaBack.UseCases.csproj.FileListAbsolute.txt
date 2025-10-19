@@ -17,3 +17,23 @@ C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.UseCases\obj\D
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\refint\AgoraCertaminaBack.UseCases.dll
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.pdb
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\ref\AgoraCertaminaBack.UseCases.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.deps.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.Data.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.Models.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.Services.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.Data.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.Models.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\bin\Debug\net9.0\AgoraCertaminaBack.Services.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.csproj.AssemblyReference.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.AssemblyInfoInputs.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.AssemblyInfo.cs
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.csproj.CoreCompileInputs.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.sourcelink.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCer.DD950666.Up2Date
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\refint\AgoraCertaminaBack.UseCases.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\AgoraCertaminaBack.UseCases.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.UseCases\obj\Debug\net9.0\ref\AgoraCertaminaBack.UseCases.dll
