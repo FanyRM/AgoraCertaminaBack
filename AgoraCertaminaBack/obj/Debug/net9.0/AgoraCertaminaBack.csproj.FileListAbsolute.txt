@@ -44,3 +44,12 @@ C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\obj\Debug\net9
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\DnsClient.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\SharpCompress.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Snappier.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\ZstdSharp.dll
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.sourcelink.json

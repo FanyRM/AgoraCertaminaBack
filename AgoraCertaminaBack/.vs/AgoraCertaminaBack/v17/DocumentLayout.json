@@ -131,8 +131,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\TagsUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:34:00.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:34:00.596Z"
             },
             {
               "$type": "Document",
@@ -144,8 +143,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\FormsUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:25:51.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:25:51.447Z"
             },
             {
               "$type": "Document",
@@ -157,8 +155,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\ContestsUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:25:25.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:25:25.249Z"
             },
             {
               "$type": "Document",
@@ -170,8 +167,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\CatalogsUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:24:48.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:24:48.626Z"
             },
             {
               "$type": "Document",
@@ -181,7 +177,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T23:26:27.491Z",
               "EditorCaption": ""
@@ -196,8 +192,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\OrganizationsUseCases.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:33:30.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:33:30.656Z"
             },
             {
               "$type": "Document",
@@ -209,8 +204,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\UseCasesDependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:14:21.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:14:21.351Z"
             },
             {
               "$type": "Document",
@@ -222,8 +216,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:35:32.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T02:35:32.522Z"
             },
             {
               "$type": "Document",
@@ -235,8 +228,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\MongoDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:10:58.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:10:58.647Z"
             },
             {
               "$type": "Document",
@@ -248,8 +240,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\Settings\\MongoDBSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:12:06.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:12:06.199Z"
             },
             {
               "$type": "Document",
@@ -261,8 +252,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\Settings\\IMongoDbSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:12:00.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:12:00.71Z"
             },
             {
               "$type": "Document",
@@ -274,8 +264,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\Repository\\MongoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:12:22.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:12:22.157Z"
             },
             {
               "$type": "Document",
@@ -287,8 +276,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\DataDependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:11:46.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:11:46.419Z"
             },
             {
               "$type": "Document",
@@ -300,8 +288,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\Repository\\IMongoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:12:15.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:12:15.826Z"
             },
             {
               "$type": "Document",
@@ -313,8 +300,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Catalog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:06:07.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:06:07.741Z"
             },
             {
               "$type": "Document",
@@ -326,8 +312,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\FieldValue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:00:19.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:00:19.733Z"
             },
             {
               "$type": "Document",
@@ -339,8 +324,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T04:58:22.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T04:58:22.483Z"
             },
             {
               "$type": "Document",
@@ -352,8 +336,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\DTOs\\Tag\\TagEnum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T04:56:23.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T04:56:23.816Z"
             },
             {
               "$type": "Document",
@@ -365,8 +348,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Tag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T04:52:43.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T04:52:43.351Z"
             },
             {
               "$type": "Document",
@@ -378,8 +360,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Field.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T02:25:20.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T02:25:20.002Z"
             },
             {
               "$type": "Document",
@@ -391,8 +372,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\SchemaContest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T04:50:37.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T04:50:37.763Z"
             },
             {
               "$type": "Document",
@@ -404,8 +384,7 @@
               "RelativeToolTip": "AgoraCertaminaBack.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-11T23:43:47.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T23:43:47.073Z"
             },
             {
               "$type": "Document",
@@ -417,8 +396,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Interfaces\\ICustomerAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T02:31:57.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T02:31:57.934Z"
             },
             {
               "$type": "Document",
@@ -429,8 +407,7 @@
               "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertamina-Back\\AgoraCertaminaBack\\AgoraCertaminaBack.csproj",
               "RelativeToolTip": "AgoraCertaminaBack.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-11T23:44:09.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T23:44:09.355Z"
             },
             {
               "$type": "Document",
@@ -442,8 +419,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Interfaces\\IEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T02:30:56.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T02:30:56.951Z"
             },
             {
               "$type": "Document",
@@ -455,8 +431,7 @@
               "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\General\\FieldTypeEnum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T02:38:32.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T02:38:32.126Z"
             },
             {
               "$type": "Document",
@@ -468,8 +443,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-11T23:43:40.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T23:43:40.782Z"
             },
             {
               "$type": "Document",
@@ -481,8 +455,7 @@
               "RelativeToolTip": "WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T23:26:24.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T23:26:24.215Z"
             }
           ]
         }

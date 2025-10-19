@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "AgoraCertaminaBack.UseCases/1.0.0": {
+      "AgoraCertaminaBack.Data/1.0.0": {
         "dependencies": {
-          "AgoraCertaminaBack.Data": "1.0.0",
           "AgoraCertaminaBack.Models": "1.0.0",
-          "AgoraCertaminaBack.Services": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
+          "Microsoft.Extensions.Options": "9.0.9",
+          "MongoDB.Driver": "3.5.0"
         },
         "runtime": {
-          "AgoraCertaminaBack.UseCases.dll": {}
+          "AgoraCertaminaBack.Data.dll": {}
         }
       },
       "DnsClient/1.6.1": {
@@ -134,20 +134,6 @@
           }
         }
       },
-      "AgoraCertaminaBack.Data/1.0.0": {
-        "dependencies": {
-          "AgoraCertaminaBack.Models": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Options": "9.0.9",
-          "MongoDB.Driver": "3.5.0"
-        },
-        "runtime": {
-          "AgoraCertaminaBack.Data.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "AgoraCertaminaBack.Models/1.0.0": {
         "dependencies": {
           "AgoraCertaminaBack.Services": "1.0.0",
@@ -174,7 +160,7 @@
     }
   },
   "libraries": {
-    "AgoraCertaminaBack.UseCases/1.0.0": {
+    "AgoraCertaminaBack.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -297,11 +283,6 @@
       "sha512": "sha512-U9Ix4l4cl58Kzz1rJzj5hoVTjmbx1qGMwzAcbv1j/d3NzrFaESIurQyg+ow4mivCgkE3S413y+U9k4WdnEIkRA==",
       "path": "zstdsharp.port/0.7.3",
       "hashPath": "zstdsharp.port.0.7.3.nupkg.sha512"
-    },
-    "AgoraCertaminaBack.Data/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "AgoraCertaminaBack.Models/1.0.0": {
       "type": "project",
