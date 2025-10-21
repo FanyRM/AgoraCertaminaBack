@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\utng\\7. septimo cuatrimetre\\arquitectura de software\\unidad ii\\aplicativo\\agoracertaminaback\\agoracertaminaback.usecases\\agoracertaminaback.usecases.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|c:\\utng\\7. septimo cuatrimetre\\arquitectura de software\\unidad ii\\aplicativo\\agoracertaminaback\\agoracertaminaback\\agoracertaminaback.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|solutionrelative:agoracertaminaback.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD829E12-3C4C-4FE9-855F-A05B218D84E2}|..\\AgoraCertaminaBack.Data\\AgoraCertaminaBack.Data.csproj|c:\\utng\\7. septimo cuatrimetre\\arquitectura de software\\unidad ii\\aplicativo\\agoracertaminaback\\agoracertaminaback.data\\agoracertaminaback.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\utng\\7. septimo cuatrimetre\\arquitectura de software\\unidad ii\\aplicativo\\agoracertaminaback\\agoracertaminaback.services\\agoracertaminaback.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\utng\\7. septimo cuatrimetre\\arquitectura de software\\unidad ii\\aplicativo\\agoracertaminaback\\agoracertaminaback.models\\agoracertaminaback.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,76 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 182,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AgoraCertaminaBack.Services",
-              "DocumentMoniker": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
-              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
-              "ToolTip": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj*",
-              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T14:41:51.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgoraCertaminaBack",
-              "DocumentMoniker": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack\\AgoraCertaminaBack.csproj",
-              "RelativeDocumentMoniker": "AgoraCertaminaBack.csproj",
-              "ToolTip": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack\\AgoraCertaminaBack.csproj*",
-              "RelativeToolTip": "AgoraCertaminaBack.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T14:41:44.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AgoraCertaminaBack.UseCases",
-              "DocumentMoniker": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj",
-              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj",
-              "ToolTip": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj",
-              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T14:41:42.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgoraCertaminaBack.Data",
-              "DocumentMoniker": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Data\\AgoraCertaminaBack.Data.csproj",
-              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Data\\AgoraCertaminaBack.Data.csproj",
-              "ToolTip": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Data\\AgoraCertaminaBack.Data.csproj*",
-              "RelativeToolTip": "..\\AgoraCertaminaBack.Data\\AgoraCertaminaBack.Data.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T14:40:36.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AgoraCertaminaBack.Models",
-              "DocumentMoniker": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj",
-              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj",
-              "ToolTip": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj*",
-              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T14:40:21.569Z",
-              "EditorCaption": ""
             }
           ]
         }
