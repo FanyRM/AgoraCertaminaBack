@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
-    <PackageReference Include="Netmentor.ROP" Version="1.12.0" />
+	  <PackageReference Include="Netmentor.ROP" Version="1.12.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +21,7 @@
     <Folder Include="Forms\" />
     <Folder Include="Contests\" />
     <Folder Include="Catalogs\" />
+    <Folder Include="Auth\" />
     <Folder Include="Organizations\" />
     <Folder Include="Tags\" />
   </ItemGroup>

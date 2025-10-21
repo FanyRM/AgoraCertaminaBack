@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aEEYSjBkVds=",
+  "dgSpecHash": "FSnAxZwzPZg=",
   "success": true,
-  "projectFilePath": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
+  "projectFilePath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\celes\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512"
+    "C:\\Users\\bhleo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512"
   ],
   "logs": []
 }

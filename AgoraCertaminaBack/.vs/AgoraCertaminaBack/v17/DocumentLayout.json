@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\",
+  "WorkspaceRootPath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -8,28 +8,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 182,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
