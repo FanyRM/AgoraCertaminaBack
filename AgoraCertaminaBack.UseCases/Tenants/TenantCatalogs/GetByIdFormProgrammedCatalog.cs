@@ -1,5 +1,5 @@
 ﻿//using ROP;
-//using SensusAPI.Models.DTOs.CustomCatalog;
+//using AgoraCertaminaBack.Models.DTOs.CustomCatalog;
 
 //namespace AgoraCertaminaBack.UseCases.Tenants.TenantCatalogs
 //{

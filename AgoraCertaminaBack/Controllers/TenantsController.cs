@@ -3,10 +3,10 @@ using AgoraCertaminaBack.UseCases;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ROP;
-using SensusAPI.Models.Response;
+using AgoraCertaminaBack.Models.Response;
 
 
-namespace SensusAPI.Controllers
+namespace AgoraCertaminaBack.Controllers
 {
     [Authorize]
     [ApiController]
@@ -15,6 +15,7 @@ namespace SensusAPI.Controllers
     {
 
         //[HasPermissionOnAction(Constants.Actions.ReadTenants)]
+        [AllowAnonymous]
         [HttpGet("")]
         public async Task<ActionResult<GenericResponse<List<TenantDTO>>>> GetAllTenants()
         {
@@ -24,6 +25,7 @@ namespace SensusAPI.Controllers
         }
 
         //[HasPermissionOnAction(Constants.Actions.DeleteTenants)]
+        [AllowAnonymous]
         [HttpDelete("{tenantId}")]
         public async Task<ActionResult<GenericResponse<Unit>>> DeleteByIdTenant(string tenantId)
         {

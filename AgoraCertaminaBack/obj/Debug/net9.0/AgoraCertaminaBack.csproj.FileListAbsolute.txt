@@ -156,3 +156,14 @@ C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\Ago
 C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.pdb
 C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.genruntimeconfig.cache
 C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\ref\AgoraCertaminaBack.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AWSSDK.CognitoIdentityProvider.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AWSSDK.Core.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AWSSDK.Extensions.NETCore.Setup.dll

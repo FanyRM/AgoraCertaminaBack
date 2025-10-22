@@ -1,4 +1,4 @@
-﻿namespace SensusAPI.Models.Response
+﻿namespace AgoraCertaminaBack.Models.Response
 {
     public enum ResponseTypeEnum
     {

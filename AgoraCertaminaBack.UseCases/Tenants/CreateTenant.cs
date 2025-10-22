@@ -4,7 +4,6 @@ using AgoraCertaminaBack.Models.DTOs.Tenant;
 using AgoraCertaminaBack.Models.Entities;
 using AgoraCertaminaBack.Models.Mappers;
 using System.Net;
-using SensusAPI.Models.Mappers;
 
 namespace AgoraCertaminaBack.UseCases.Tenants
 {

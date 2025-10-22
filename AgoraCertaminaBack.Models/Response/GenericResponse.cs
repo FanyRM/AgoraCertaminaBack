@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace SensusAPI.Models.Response
+namespace AgoraCertaminaBack.Models.Response
 {
     /// <summary>
     /// This class contains the structure of a generic response 

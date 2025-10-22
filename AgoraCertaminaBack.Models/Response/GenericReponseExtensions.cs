@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Runtime.ExceptionServices;
 
-namespace SensusAPI.Models.Response
+namespace AgoraCertaminaBack.Models.Response
 {
     public static class GenericReponseExtensions
     {

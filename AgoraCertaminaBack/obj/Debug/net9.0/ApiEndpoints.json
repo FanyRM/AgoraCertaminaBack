@@ -1,7 +1,118 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "AddUser",
+    "RelativePath": "account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attributes",
+        "Type": "AgoraCertaminaBack.Authorization.AuthenticationEntities\u002BUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "TenantRegister",
+    "RelativePath": "account/tenant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Authorization.AuthenticationEntities\u002BCreateTenantRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "CreateAdminForExistingTenant",
+    "RelativePath": "account/tenant/{tenantId}/admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Controllers.CreateAdminRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "UpdateUserAsync",
+    "RelativePath": "account/user/{username}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Authorization.AuthenticationEntities\u002BUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "DeleteUser",
+    "RelativePath": "account/user/{username}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "GetUsers",
+    "RelativePath": "account/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "paginationToken",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__3",
     "RelativePath": "api/health",
     "HttpMethod": "GET",
     "IsController": false,
@@ -16,7 +127,63 @@
     ]
   },
   {
-    "ContainingType": "SensusAPI.Controllers.FormController",
+    "ContainingType": "AgoraCertaminaBack.Controllers.AuthController",
+    "Method": "Exchange",
+    "RelativePath": "auth/exchange/{code}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Authorization.AuthenticationEntities\u002BTokenDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "auth/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Authorization.AuthenticationEntities\u002BTokenDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormController",
     "Method": "CreateForm",
     "RelativePath": "form",
     "HttpMethod": "POST",
@@ -31,7 +198,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SensusAPI.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -42,7 +209,7 @@
     ]
   },
   {
-    "ContainingType": "SensusAPI.Controllers.FormController",
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormController",
     "Method": "GetAllForms",
     "RelativePath": "form",
     "HttpMethod": "GET",
@@ -51,7 +218,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "SensusAPI.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.Form.FormDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.Form.FormDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -62,7 +229,7 @@
     ]
   },
   {
-    "ContainingType": "SensusAPI.Controllers.FormController",
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormController",
     "Method": "GetByIdFormDTO",
     "RelativePath": "form/{formId}",
     "HttpMethod": "GET",
@@ -77,7 +244,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SensusAPI.Models.Response.GenericResponse\u00601[[AgoraCertaminaBack.Models.DTOs.Form.FormDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[AgoraCertaminaBack.Models.DTOs.Form.FormDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -88,7 +255,7 @@
     ]
   },
   {
-    "ContainingType": "SensusAPI.Controllers.FormController",
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormController",
     "Method": "DeleteFormById",
     "RelativePath": "form/{formId}",
     "HttpMethod": "DELETE",
@@ -103,7 +270,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SensusAPI.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -114,7 +281,7 @@
     ]
   },
   {
-    "ContainingType": "SensusAPI.Controllers.TenantsController",
+    "ContainingType": "AgoraCertaminaBack.Controllers.TenantsController",
     "Method": "GetAllTenants",
     "RelativePath": "tenant",
     "HttpMethod": "GET",
@@ -123,7 +290,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "SensusAPI.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.Tenant.TenantDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.Tenant.TenantDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -134,7 +301,7 @@
     ]
   },
   {
-    "ContainingType": "SensusAPI.Controllers.TenantsController",
+    "ContainingType": "AgoraCertaminaBack.Controllers.TenantsController",
     "Method": "DeleteByIdTenant",
     "RelativePath": "tenant/{tenantId}",
     "HttpMethod": "DELETE",
@@ -149,7 +316,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SensusAPI.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

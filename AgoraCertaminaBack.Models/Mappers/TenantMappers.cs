@@ -1,7 +1,7 @@
 ﻿using AgoraCertaminaBack.Models.Entities;
 using MongoDB.Bson;
 
-namespace SensusAPI.Models.Mappers
+namespace AgoraCertaminaBack.Models.Mappers
 {
     public static class TenantMappers
     {
