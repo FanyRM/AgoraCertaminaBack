@@ -16,12 +16,4 @@
 	<ItemGroup>
 		<ProjectReference Include="..\AgoraCertaminaBack.Services\AgoraCertaminaBack.Services.csproj" />
 	</ItemGroup>
-
-<<<<<<< HEAD
-=======
-	<ItemGroup>
-		<Folder Include="DTOs\SchemaContest\" />
-	</ItemGroup>
-
->>>>>>> b2383abd653b42337d99430b935461f5a734cb6d
 </Project>

@@ -5,16 +5,8 @@ using AgoraCertaminaBack.Data.Settings;
 using AgoraCertaminaBack.Middlewares;
 using AgoraCertaminaBack.Models.General;
 using AgoraCertaminaBack.UseCases;
-<<<<<<< HEAD
 using AgoraCertaminaBack.Services;
 using AgoraCertaminaBack.Services.Settings;
-
-var mongoDBSettings = new MongoDBSettings
-{
-    ConnectionString = "mongodb://localhost:27017",
-    DatabaseName = "AgoraCertaminaDB"
-};
-=======
 using Amazon;
 using Amazon.CognitoIdentityProvider;
 using Amazon.Extensions.NETCore.Setup;
@@ -23,7 +15,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
->>>>>>> b2383abd653b42337d99430b935461f5a734cb6d
 
 var serviceSettings = new ServiceSettings
 {
@@ -37,10 +28,6 @@ var builder = WebApplication.CreateBuilder(args);
 var isDevelopment = builder.Environment.IsDevelopment();
 string configurationCORS = "ConfigurationCors";
 
-<<<<<<< HEAD
-// Add services to the container.
-builder.Services.AddExternalServices(serviceSettings);
-=======
 // ✅ CARGAR CONFIGURACIONES DESDE appsettings.json
 var mongoDBSettings = builder.Configuration.GetSection("MongoDB").Get<MongoDBSettings>()
     ?? throw new Exception("MongoDB settings not found");
@@ -60,7 +47,8 @@ builder.Services.AddAWSService<IAmazonCognitoIdentityProvider>();
 builder.Services.AddSingleton<ICognitoSettings>(cognitoSettings);
 
 // ✅ REGISTRAR SERVICIOS
->>>>>>> b2383abd653b42337d99430b935461f5a734cb6d
+// Add services to the container.
+builder.Services.AddExternalServices(serviceSettings);
 builder.Services.AddData(mongoDBSettings);
 builder.Services.AddUseCases();
 builder.Services.AddControllers();
@@ -190,7 +178,6 @@ app.UseAuthorization();               // 3️⃣ Verifica permisos basados en el
 
 app.MapControllers();
 
-<<<<<<< HEAD
 app.Run();
 
 app.MapGet("/api/storage/health", async (HttpClient httpClient, IServiceSettings settings) =>
@@ -219,7 +206,7 @@ app.MapGet("/api/storage/health", async (HttpClient httpClient, IServiceSettings
         return Results.Problem($"AmazonSimulator connection failed: {ex.Message}");
     }
 });
-=======
+
 // ✅ Health check
 app.MapGet("/api/health", () => Results.Ok(new
 {
@@ -230,4 +217,3 @@ app.MapGet("/api/health", () => Results.Ok(new
 .AllowAnonymous();
 
 app.Run();
->>>>>>> b2383abd653b42337d99430b935461f5a734cb6d
