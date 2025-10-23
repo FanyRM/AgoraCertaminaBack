@@ -1,7 +1,211 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\mappers\\schemacontestmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\converttocontestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\deleteschemabyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback\\controllers\\schemacontestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|solutionrelative:controllers\\schemacontestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback\\controllers\\contestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|solutionrelative:controllers\\contestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\updateschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contestsusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontestsusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\getentitybyidschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\getdataschemabyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\getbyidschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\createschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\catalogs\\updatecatalogvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\catalogs\\getbyidcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\catalogs\\getallcatalogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\catalogs\\deletecatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\mappers\\catalogmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\dtos\\catalog\\catalogrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\catalogs\\createcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\deletebyidcontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\createcontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\localfilemanagerconfigurable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\localfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\getbyidcontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\getcontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\getdisabledcontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\getentitybyidcontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\gets3files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\contests\\updatecontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\entities\\contest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\dtos\\contest\\contestdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\dtos\\contest\\contestenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\tags\\getbyidtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\tags\\getalltags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\tags\\edittag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\tags\\deletetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\tags\\createtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\servicesdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\localawsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\settings\\servicesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\settings\\iservicesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback\\agoracertaminaback.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{98AF154D-FB76-4E2E-8F71-7D64E4E9F50B}|AgoraCertaminaBack.csproj|solutionrelative:agoracertaminaback.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\interfaces\\ifilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234F0620-54B7-4F40-AAC0-A0D0D82D72B1}|..\\AgoraCertaminaBack.Services\\AgoraCertaminaBack.Services.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.services\\interfaces\\iaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\shared\\stringutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\shared\\fileutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\shared\\fieldfiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\getallschemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schematag\\getallschematags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schematag\\deleteschematag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schematag\\assignschematag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schemafield\\getallschemafields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schemafield\\editschemafield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schemafield\\deleteschemafield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\schemacontests\\schemafield\\createschemafield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\dtos\\schemacontest\\schemacontestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\customers\\getcustomernamebyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\customers\\getbyidcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\customers\\getallcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC28FAF1-C311-4CDD-A775-CD5A454E0D8A}|..\\AgoraCertaminaBack.UseCases\\AgoraCertaminaBack.UseCases.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.usecases\\customers\\createcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\mappers\\customermappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\response\\responsetypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A61CAB1-08F7-4C58-A8C5-FB2F9EE560AD}|..\\AgoraCertaminaBack.Models\\AgoraCertaminaBack.Models.csproj|c:\\proyects\\agoracertamina\\agoracertaminaback\\agoracertaminaback.models\\response\\genericresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +213,593 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SchemaContestMapper.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Mappers\\SchemaContestMapper.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Mappers\\SchemaContestMapper.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Mappers\\SchemaContestMapper.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Mappers\\SchemaContestMapper.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAowFcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:23:43.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SchemaContestController.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\Controllers\\SchemaContestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SchemaContestController.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\Controllers\\SchemaContestController.cs",
+              "RelativeToolTip": "Controllers\\SchemaContestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:20:36.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContestController.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\Controllers\\ContestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContestController.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\Controllers\\ContestController.cs",
+              "RelativeToolTip": "Controllers\\ContestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:20:07.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteSchemaById.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\DeleteSchemaById.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\DeleteSchemaById.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\DeleteSchemaById.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\DeleteSchemaById.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAACZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:45:42.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConvertToContestDTO.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\ConvertToContestDTO.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\ConvertToContestDTO.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\ConvertToContestDTO.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\ConvertToContestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:40:22.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateSchema.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\UpdateSchema.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\UpdateSchema.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\UpdateSchema.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\UpdateSchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:32:28.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetEntityByIdSchema.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetEntityByIdSchema.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetEntityByIdSchema.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetEntityByIdSchema.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetEntityByIdSchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:30:01.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SchemaContestsUseCases.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContestsUseCases.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContestsUseCases.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContestsUseCases.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContestsUseCases.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:16:11.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContestsUseCases.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\ContestsUseCases.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\ContestsUseCases.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\ContestsUseCases.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\ContestsUseCases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:12:26.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetDataSchemaById.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetDataSchemaById.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetDataSchemaById.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetDataSchemaById.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetDataSchemaById.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:49:01.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetByIdSchema.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetByIdSchema.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetByIdSchema.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetByIdSchema.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetByIdSchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:48:38.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateSchema.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\CreateSchema.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\CreateSchema.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\CreateSchema.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\CreateSchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:42:57.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetByIdCatalog.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\GetByIdCatalog.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\GetByIdCatalog.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\GetByIdCatalog.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\GetByIdCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:04:15.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetAllCatalogs.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\GetAllCatalogs.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\GetAllCatalogs.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\GetAllCatalogs.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\GetAllCatalogs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:03:43.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CatalogMappers.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Mappers\\CatalogMappers.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Mappers\\CatalogMappers.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Mappers\\CatalogMappers.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Mappers\\CatalogMappers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:09:49.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DeleteCatalog.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\DeleteCatalog.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\DeleteCatalog.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\DeleteCatalog.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\DeleteCatalog.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:01:42.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateCatalogValues.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\UpdateCatalogValues.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\UpdateCatalogValues.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\UpdateCatalogValues.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\UpdateCatalogValues.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:04:52.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CatalogRequest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\Catalog\\CatalogRequest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\DTOs\\Catalog\\CatalogRequest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\Catalog\\CatalogRequest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\DTOs\\Catalog\\CatalogRequest.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:06:35.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateCatalog.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\CreateCatalog.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\CreateCatalog.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Catalogs\\CreateCatalog.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Catalogs\\CreateCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:59:39.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DeleteByIdContest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\DeleteByIdContest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\DeleteByIdContest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\DeleteByIdContest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\DeleteByIdContest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:45:06.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateContest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\CreateContest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\CreateContest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\CreateContest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\CreateContest.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwA8AAADFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:41:51.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LocalFileManagerConfigurable.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\LocalFileManagerConfigurable.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\LocalFileManagerConfigurable.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\LocalFileManagerConfigurable.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\LocalFileManagerConfigurable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:30:25.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LocalFileManager.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\LocalFileManager.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\LocalFileManager.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\LocalFileManager.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\LocalFileManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:35:26.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetByIdContest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetByIdContest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetByIdContest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetByIdContest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetByIdContest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:38:53.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetContests.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetContests.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetContests.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetContests.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetContests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:09:32.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetDisabledContests.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetDisabledContests.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetDisabledContests.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetDisabledContests.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetDisabledContests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:33:40.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetEntityByIdContest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetEntityByIdContest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetEntityByIdContest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetEntityByIdContest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetEntityByIdContest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:35:44.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GetS3Files.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetS3Files.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetS3Files.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\GetS3Files.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\GetS3Files.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:36:51.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateContest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\UpdateContest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Contests\\UpdateContest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Contests\\UpdateContest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Contests\\UpdateContest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8BAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:41:42.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ContestDTOs.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestDTOs.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestDTOs.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestDTOs.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestDTOs.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:13:40.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Contest.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Contest.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:31:19.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ContestEnums.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestEnums.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestEnums.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestEnums.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\DTOs\\Contest\\ContestEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:20:53.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GetByIdTag.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\GetByIdTag.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Tags\\GetByIdTag.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\GetByIdTag.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Tags\\GetByIdTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:00:52.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GetAllTags.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\GetAllTags.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Tags\\GetAllTags.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\GetAllTags.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Tags\\GetAllTags.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:00:01.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditTag.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\EditTag.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Tags\\EditTag.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\EditTag.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Tags\\EditTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:59:25.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DeleteTag.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\DeleteTag.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Tags\\DeleteTag.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\DeleteTag.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Tags\\DeleteTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:58:17.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CreateTag.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\CreateTag.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Tags\\CreateTag.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Tags\\CreateTag.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Tags\\CreateTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:56:40.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T05:40:42.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LocalAWSService.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\LocalAWSService.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\LocalAWSService.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\LocalAWSService.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\LocalAWSService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:38:10.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:28:11.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ServicesDependencyInjection.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\ServicesDependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:20:36.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ServiceSettings.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Settings\\ServiceSettings.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\Settings\\ServiceSettings.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Settings\\ServiceSettings.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\Settings\\ServiceSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:19:46.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IServiceSettings.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Settings\\IServiceSettings.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\Settings\\IServiceSettings.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Settings\\IServiceSettings.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\Settings\\IServiceSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:19:39.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AgoraCertaminaBack",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\AgoraCertaminaBack.csproj",
+              "RelativeDocumentMoniker": "AgoraCertaminaBack.csproj",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack\\AgoraCertaminaBack.csproj",
+              "RelativeToolTip": "AgoraCertaminaBack.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T05:28:08.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IFileManager.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Interfaces\\IFileManager.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\Interfaces\\IFileManager.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Interfaces\\IFileManager.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\Interfaces\\IFileManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:19:23.762Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -30,6 +819,263 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IAWS.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Interfaces\\IAWS.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Services\\Interfaces\\IAWS.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Services\\Interfaces\\IAWS.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Services\\Interfaces\\IAWS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T05:18:55.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "StringUtilities.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Shared\\StringUtilities.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Shared\\StringUtilities.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Shared\\StringUtilities.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Shared\\StringUtilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:47:30.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FileUtilities.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Shared\\FileUtilities.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Shared\\FileUtilities.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Shared\\FileUtilities.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Shared\\FileUtilities.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA1wAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:47:22.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "FieldFileType.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Shared\\FieldFileType.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Shared\\FieldFileType.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Shared\\FieldFileType.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Shared\\FieldFileType.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:46:53.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "GetAllSchemas.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetAllSchemas.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetAllSchemas.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetAllSchemas.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\GetAllSchemas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:47:36.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "GetAllSchemaTags.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\GetAllSchemaTags.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\GetAllSchemaTags.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\GetAllSchemaTags.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\GetAllSchemaTags.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:42:34.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DeleteSchemaTag.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\DeleteSchemaTag.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\DeleteSchemaTag.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\DeleteSchemaTag.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\DeleteSchemaTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:42:13.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AssignSchemaTag.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\AssignSchemaTag.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\AssignSchemaTag.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\AssignSchemaTag.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaTag\\AssignSchemaTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:40:58.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "GetAllSchemaFields.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\GetAllSchemaFields.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\GetAllSchemaFields.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\GetAllSchemaFields.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\GetAllSchemaFields.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:40:36.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "EditSchemaField.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\EditSchemaField.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\EditSchemaField.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\EditSchemaField.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\EditSchemaField.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:38:12.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "DeleteSchemaField.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\DeleteSchemaField.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\DeleteSchemaField.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\DeleteSchemaField.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\DeleteSchemaField.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:37:29.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "CreateSchemaField.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\CreateSchemaField.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\CreateSchemaField.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\CreateSchemaField.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\SchemaContests\\SchemaField\\CreateSchemaField.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:34:32.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SchemaContestDTO.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\SchemaContest\\SchemaContestDTO.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\DTOs\\SchemaContest\\SchemaContestDTO.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\DTOs\\SchemaContest\\SchemaContestDTO.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\DTOs\\SchemaContest\\SchemaContestDTO.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwEUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:39:29.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "GetCustomerNameById.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\GetCustomerNameById.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Customers\\GetCustomerNameById.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\GetCustomerNameById.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Customers\\GetCustomerNameById.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:28:21.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "GetByIdCustomer.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\GetByIdCustomer.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Customers\\GetByIdCustomer.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\GetByIdCustomer.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Customers\\GetByIdCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:32:11.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "GetAllCustomers.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\GetAllCustomers.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Customers\\GetAllCustomers.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\GetAllCustomers.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Customers\\GetAllCustomers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:31:52.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "CustomerMappers.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Mappers\\CustomerMappers.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Mappers\\CustomerMappers.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Mappers\\CustomerMappers.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Mappers\\CustomerMappers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:31:32.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CreateCustomer.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\CreateCustomer.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.UseCases\\Customers\\CreateCustomer.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.UseCases\\Customers\\CreateCustomer.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.UseCases\\Customers\\CreateCustomer.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:15:09.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ResponseTypeEnum.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Response\\ResponseTypeEnum.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Response\\ResponseTypeEnum.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Response\\ResponseTypeEnum.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Response\\ResponseTypeEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:18:36.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "GenericResponse.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Response\\GenericResponse.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Response\\GenericResponse.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Response\\GenericResponse.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Response\\GenericResponse.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:18:23.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "..\\AgoraCertaminaBack.Models\\Entities\\Customer.cs",
+              "ToolTip": "C:\\proyects\\AgoraCertamina\\AgoraCertaminaBack\\AgoraCertaminaBack.Models\\Entities\\Customer.cs",
+              "RelativeToolTip": "..\\AgoraCertaminaBack.Models\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T02:15:48.057Z"
             }
           ]
         }

@@ -19,10 +19,7 @@
 
   <ItemGroup>
     <Folder Include="Forms\" />
-    <Folder Include="Contests\" />
-    <Folder Include="Catalogs\" />
     <Folder Include="Organizations\" />
-    <Folder Include="Tags\" />
   </ItemGroup>
 
 </Project>

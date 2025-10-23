@@ -149,3 +149,10 @@ C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.pdb
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.genruntimeconfig.cache
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\ref\AgoraCertaminaBack.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ROP.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ROP.ApiExtensions.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Scrutor.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

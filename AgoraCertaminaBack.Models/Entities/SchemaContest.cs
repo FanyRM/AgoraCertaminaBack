@@ -3,7 +3,7 @@ using AgoraCertaminaBack.Models.Entities.Interfaces;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace ControlStockAPI.Models.Entities
+namespace AgoraCertaminaBack.Models.Entities
 {
     public class SchemaContest : IEntity, ICustomerAttribute
     {
