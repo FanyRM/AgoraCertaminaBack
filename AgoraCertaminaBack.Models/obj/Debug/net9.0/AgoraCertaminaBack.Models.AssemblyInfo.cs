@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgoraCertaminaBack.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85e4ef539a501127103d8f91ed2cf8e003d1dba1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c092c113b33af7dde447f28c090f1852f040c7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgoraCertaminaBack.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgoraCertaminaBack.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

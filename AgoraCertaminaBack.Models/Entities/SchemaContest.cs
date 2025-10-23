@@ -11,8 +11,8 @@ namespace AgoraCertaminaBack.Models.Entities
         [BsonElement("_id"), BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = string.Empty;
 
-        [BsonElement("customer_id"), BsonRepresentation(BsonType.ObjectId)]
-        public required string CustomerId { get; set; }
+        [BsonElement("organization_id"), BsonRepresentation(BsonType.ObjectId)]
+        public required string OrganizationId { get; set; }
 
         [BsonElement("schema_name"), BsonRepresentation(BsonType.String)]
         public required string SchemaName { get; set; }

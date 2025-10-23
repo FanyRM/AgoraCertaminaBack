@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="4.0.3.10" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
     <PackageReference Include="Netmentor.ROP" Version="1.12.0" />
     <PackageReference Include="Netmentor.ROP.ApiExtensions" Version="1.12.0" />
@@ -18,7 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AgoraCertaminaBack.Data\AgoraCertaminaBack.Data.csproj" />
     <ProjectReference Include="..\AgoraCertaminaBack.Models\AgoraCertaminaBack.Models.csproj" />
-    <ProjectReference Include="..\AgoraCertaminaBack.Services\AgoraCertaminaBack.Services.csproj" />
+	<ProjectReference Include="..\AgoraCertaminaBack.Services\AgoraCertaminaBack.Services.csproj" />
     <ProjectReference Include="..\AgoraCertaminaBack.UseCases\AgoraCertaminaBack.UseCases.csproj" />
   </ItemGroup>
 

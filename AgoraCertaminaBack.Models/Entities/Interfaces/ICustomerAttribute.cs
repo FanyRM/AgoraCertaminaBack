@@ -2,6 +2,6 @@
 {
     public interface ICustomerAttribute
     {
-        public string CustomerId { get; set; }
+        public string OrganizationId { get; set; }
     }
 }

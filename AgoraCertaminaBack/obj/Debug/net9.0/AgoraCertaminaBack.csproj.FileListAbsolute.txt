@@ -44,56 +44,6 @@ C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\obj\Debug\net9
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\appsettings.Development.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\appsettings.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.staticwebassets.endpoints.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.exe
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.deps.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.runtimeconfig.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.pdb
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\DnsClient.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.OpenApi.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\MongoDB.Bson.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\MongoDB.Driver.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\SharpCompress.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Snappier.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ZstdSharp.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Data.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Models.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Services.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Data.pdb
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Models.pdb
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Services.pdb
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.pdb
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.csproj.AssemblyReference.cache
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.GeneratedMSBuildEditorConfig.editorconfig
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.AssemblyInfoInputs.cache
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.AssemblyInfo.cs
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.csproj.CoreCompileInputs.cache
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.MvcApplicationPartsAssemblyInfo.cs
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.MvcApplicationPartsAssemblyInfo.cache
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.sourcelink.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\scopedcss\bundle\AgoraCertaminaBack.styles.css
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.build.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.build.json.cache
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.development.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCer.8038A0FF.Up2Date
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\refint\AgoraCertaminaBack.dll
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.pdb
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.genruntimeconfig.cache
-C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\ref\AgoraCertaminaBack.dll
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\appsettings.Development.json
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\appsettings.json
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.staticwebassets.endpoints.json
@@ -149,6 +99,7 @@ C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.pdb
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.genruntimeconfig.cache
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\ref\AgoraCertaminaBack.dll
+<<<<<<< HEAD
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ROP.dll
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ROP.ApiExtensions.dll
@@ -156,3 +107,73 @@ C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Scrutor.dll
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.dll
 C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+=======
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.csproj.AssemblyReference.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.AssemblyInfoInputs.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.AssemblyInfo.cs
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.csproj.CoreCompileInputs.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.MvcApplicationPartsAssemblyInfo.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.sourcelink.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\appsettings.Development.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\appsettings.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.staticwebassets.endpoints.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.exe
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.deps.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.runtimeconfig.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\DnsClient.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ROP.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ROP.ApiExtensions.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Scrutor.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\SharpCompress.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Snappier.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\ZstdSharp.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Data.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Models.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Services.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Data.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Models.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.Services.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AgoraCertaminaBack.UseCases.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.MvcApplicationPartsAssemblyInfo.cs
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\scopedcss\bundle\AgoraCertaminaBack.styles.css
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.build.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.development.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCer.8038A0FF.Up2Date
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\refint\AgoraCertaminaBack.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\AgoraCertaminaBack.genruntimeconfig.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\obj\Debug\net9.0\ref\AgoraCertaminaBack.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AWSSDK.CognitoIdentityProvider.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AWSSDK.Core.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack\bin\Debug\net9.0\AWSSDK.Extensions.NETCore.Setup.dll
+>>>>>>> b2383abd653b42337d99430b935461f5a734cb6d

@@ -30,7 +30,7 @@ namespace AgoraCertaminaBack.Data.Repository
             // Si T implementa ICustomerAttribute, aplica el filtro para CustomerId
             if (typeof(ICustomerAttribute).IsAssignableFrom(typeof(T)))
             {
-                var customerFilter = Builders<T>.Filter.Eq(doc => ((ICustomerAttribute)(object)doc).CustomerId, _customerId);
+                var customerFilter = Builders<T>.Filter.Eq(doc => ((ICustomerAttribute)(object)doc).OrganizationId, _customerId);
 
                 // Combina el filtro global con el filtro de CustomerId
                 filter = Builders<T>.Filter.And(filter, customerFilter);
