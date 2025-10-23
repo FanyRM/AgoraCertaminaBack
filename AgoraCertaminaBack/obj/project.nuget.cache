@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FQj2sPSbcC0=",
+  "dgSpecHash": "f2KqJ8CR2RU=",
   "success": true,
   "projectFilePath": "C:\\UTNG\\7. SEPTIMO CUATRIMETRE\\ARQUITECTURA DE SOFTWARE\\UNIDAD II\\APLICATIVO\\AgoraCertaminaBack\\AgoraCertaminaBack\\AgoraCertaminaBack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bhleo\\.nuget\\packages\\awssdk.cognitoidentityprovider\\4.0.3.10\\awssdk.cognitoidentityprovider.4.0.3.10.nupkg.sha512",
     "C:\\Users\\bhleo\\.nuget\\packages\\awssdk.core\\4.0.1.1\\awssdk.core.4.0.1.1.nupkg.sha512",
     "C:\\Users\\bhleo\\.nuget\\packages\\awssdk.extensions.netcore.setup\\4.0.3.7\\awssdk.extensions.netcore.setup.4.0.3.7.nupkg.sha512",
+    "C:\\Users\\bhleo\\.nuget\\packages\\awssdk.securitytoken\\4.0.2.9\\awssdk.securitytoken.4.0.2.9.nupkg.sha512",
     "C:\\Users\\bhleo\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\bhleo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\bhleo\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",

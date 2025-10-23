@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿    using Newtonsoft.Json;
 
 namespace AgoraCertaminaBack.Authorization
 {
@@ -21,9 +21,18 @@ namespace AgoraCertaminaBack.Authorization
 
         public record TokenDTO(string IdentityToken, int ExpiresIn);
 
-        public record UserRequest(string Name, string Lastname, List<string> Roles, string Email, string? TenantId);
+        // ✅ Cambiado de record a class para permitir inicialización flexible
+        public class UserRequest
+        {
+            public required string Name { get; set; }
+            public required string Lastname { get; set; }
+            public required List<string> Roles { get; set; }
+            public required string Email { get; set; }
+            public string? OrganizationId { get; set; }
+        }
 
         public record UserGroupRequest(string Identifier, string GroupName);
+
         public record CreateTenantRequest(string Name, string Email);
     }
 }

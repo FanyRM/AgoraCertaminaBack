@@ -104,8 +104,21 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           }
-        }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "HasPermissionOnAction_AddUsers___False"
+            ]
+          }
+        ]
       }
     },
     "/account/users": {
@@ -188,8 +201,21 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           }
-        }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "HasPermissionOnAction_UpdateUsers___False"
+            ]
+          }
+        ]
       },
       "delete": {
         "tags": [
@@ -225,7 +251,44 @@
         ]
       }
     },
+    "/account/groups": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [
+              "HasPermissionOnAction_ReadGroups___False"
+            ]
+          }
+        ]
+      }
+    },
     "/api/health": {
+      "get": {
+        "tags": [
+          "AgoraCertaminaBack"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/debug/aws-config": {
       "get": {
         "tags": [
           "AgoraCertaminaBack"
@@ -1049,6 +1112,12 @@
         "additionalProperties": false
       },
       "UserRequest": {
+        "required": [
+          "email",
+          "lastname",
+          "name",
+          "roles"
+        ],
         "type": "object",
         "properties": {
           "name": {
@@ -1070,7 +1139,7 @@
             "type": "string",
             "nullable": true
           },
-          "tenantId": {
+          "organizationId": {
             "type": "string",
             "nullable": true
           }

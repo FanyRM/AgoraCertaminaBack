@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
+    "Method": "GetAllGroups",
+    "RelativePath": "account/groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.AccountController",
     "Method": "AddUser",
     "RelativePath": "account/register",
     "HttpMethod": "POST",
@@ -111,8 +121,24 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
+    "RelativePath": "api/debug/aws-config",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__3",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__5",
     "RelativePath": "api/health",
     "HttpMethod": "GET",
     "IsController": false,

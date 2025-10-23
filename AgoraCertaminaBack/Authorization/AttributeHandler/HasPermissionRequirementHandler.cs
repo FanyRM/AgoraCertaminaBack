@@ -3,10 +3,6 @@ using AgoraCertaminaBack.Models.Entities;
 using AgoraCertaminaBack.Models.Entities.Interfaces;
 using AgoraCertaminaBack.Models.General;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.VisualBasic;
-using System.ComponentModel;
-using System.Net;
-using System.Reflection;
 using System.Security.Claims;
 
 namespace AgoraCertaminaBack.Authorization.AttributeHandler
@@ -32,7 +28,14 @@ namespace AgoraCertaminaBack.Authorization.AttributeHandler
             HasPermissionRequirement requirement)
         {
             // 1. Verificar que el usuario esté autenticado
-            var nameIdentifier = context.User.FindFirstValue(ClaimsUser.Identifier);
+            // Lectura más fiable del User ID: primero NameIdentifier, luego el claim de Cognito "sub"
+            var nameIdentifier = context.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (string.IsNullOrWhiteSpace(nameIdentifier))
+            {
+                nameIdentifier = context.User.FindFirstValue(ClaimsUser.Identifier);
+            }
+
             if (string.IsNullOrWhiteSpace(nameIdentifier))
             {
                 _logger.LogWarning("User identifier is missing");
@@ -41,20 +44,14 @@ namespace AgoraCertaminaBack.Authorization.AttributeHandler
             }
 
             // 2. Obtener roles del usuario desde cognito:groups
-            var userRoles = context.User.FindAll("cognito:groups")
+            var userRoles = context.User.FindAll(ClaimsUser.Groups)
                 .Select(c => c.Value)
                 .ToArray();
 
-            if (userRoles.Length == 0)
-            {
-                _logger.LogWarning("User {UserId} has no roles assigned", nameIdentifier);
-                context.Fail(new AuthorizationFailureReason(this, "No roles assigned to user"));
-                return;
-            }
+            // ... el resto de la lógica es correcta ...
 
             // 3. Verificar si el usuario tiene permiso para la acción
             var hasPermission = CheckPermission(requirement.Action, userRoles);
-
             if (!hasPermission)
             {
                 _logger.LogWarning(
@@ -62,7 +59,6 @@ namespace AgoraCertaminaBack.Authorization.AttributeHandler
                     nameIdentifier,
                     requirement.Action,
                     string.Join(", ", userRoles));
-
                 context.Fail(new AuthorizationFailureReason(
                     this,
                     $"You don't have permission to perform this action: {requirement.Action}"));
@@ -73,31 +69,27 @@ namespace AgoraCertaminaBack.Authorization.AttributeHandler
             if (!string.IsNullOrWhiteSpace(requirement.ResourceType) &&
                 !string.IsNullOrWhiteSpace(requirement.ResourceIdFormElementName))
             {
-                var userTenantId = context.User.FindFirstValue(ClaimsUser.TenantId);
-
-                if (string.IsNullOrWhiteSpace(userTenantId))
+                var userOrganizationId = context.User.FindFirstValue(ClaimsUser.OrganizationId);
+                if (string.IsNullOrWhiteSpace(userOrganizationId))
                 {
-                    _logger.LogWarning("User tenant ID is missing");
-                    context.Fail(new AuthorizationFailureReason(this, "Tenant information is required"));
+                    _logger.LogWarning("User organization ID is missing");
+                    context.Fail(new AuthorizationFailureReason(this, "Organization information is required"));
                     return;
                 }
 
                 // Obtener el ID del recurso
                 var resourceId = GetResourceIdFromRequest(requirement.ResourceIdFormElementName);
-
                 if (!string.IsNullOrWhiteSpace(resourceId))
                 {
                     var resource = await GetResource(requirement.ResourceType, resourceId);
-
-                    if (resource != null && resource.Id != userTenantId)
+                    if (resource != null && resource.Id != userOrganizationId)
                     {
                         _logger.LogWarning(
-                            "User {UserId} from tenant {UserTenant} attempted to access resource {ResourceId} from tenant {ResourceTenant}",
+                            "User {UserId} from organization {UserOrg} attempted to access resource {ResourceId} from organization {ResourceOrg}",
                             nameIdentifier,
-                            userTenantId,
+                            userOrganizationId,
                             resourceId,
                             resource.Id);
-
                         context.Fail(new AuthorizationFailureReason(
                             this,
                             "You don't have access to this resource"));
@@ -106,19 +98,16 @@ namespace AgoraCertaminaBack.Authorization.AttributeHandler
                 }
             }
 
-            // ? Todo OK
+            // Todo OK
             _logger.LogInformation(
                 "User {UserId} authorized for action {Action}",
                 nameIdentifier,
                 requirement.Action);
-
             context.Succeed(requirement);
         }
 
-        // ? NUEVO: Método para verificar permisos basado en roles
         private bool CheckPermission(string action, string[] userRoles)
         {
-            // Mapeo de acciones a roles permitidos
             var permissionMap = new Dictionary<string, string[]>
             {
                 // Tenants - Solo Administrator
@@ -126,13 +115,13 @@ namespace AgoraCertaminaBack.Authorization.AttributeHandler
                 { Constants.Actions.ReadTenants, new[] { "Administrator" } },
                 { Constants.Actions.UpdateTenants, new[] { "Administrator" } },
                 { Constants.Actions.DeleteTenants, new[] { "Administrator" } },
-
+                
                 // Users - Administrator y Manager
                 { Constants.Actions.AddUsers, new[] { "Administrator", "Manager" } },
                 { Constants.Actions.ReadUsers, new[] { "Administrator", "Manager", "Operator" } },
                 { Constants.Actions.UpdateUsers, new[] { "Administrator", "Manager" } },
                 { Constants.Actions.DeleteUsers, new[] { "Administrator", "Manager" } },
-
+                
                 // Groups
                 { Constants.Actions.ReadGroups, new[] { "Administrator", "Manager" } },
                 { Constants.Actions.AddGroups, new[] { "Administrator" } },

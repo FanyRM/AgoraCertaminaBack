@@ -33,12 +33,10 @@ namespace AgoraCertaminaBack.Controllers
         }
 
         #region Tenant
-
         [AllowAnonymous]
         [HttpPost("tenant")]
         public async Task<IActionResult> TenantRegister(CreateTenantRequest request)
         {
-            // Validaciones iniciales
             if (string.IsNullOrWhiteSpace(request.Name))
                 return BadRequest(new { error = "El nombre del tenant es requerido." });
 
@@ -47,7 +45,6 @@ namespace AgoraCertaminaBack.Controllers
 
             try
             {
-                // 1. Crear tenant en base de datos
                 var tenantResult = await _createTenant.Execute(request.Name);
                 if (tenantResult.Errors.Any())
                     return BadRequest(new { error = tenantResult.Errors });
@@ -55,88 +52,16 @@ namespace AgoraCertaminaBack.Controllers
                 var tenantId = tenantResult.Value.Id;
                 var tenantName = tenantResult.Value.TenantName;
 
-                // 2. Generar password temporal
-                string passwordTemporal = PasswordGenerator.Generate(12);
-
-                try
+                var userRequest = new UserRequest
                 {
-                    // 3. Crear usuario administrador en Cognito
-                    var cognitoRequest = new AdminCreateUserRequest
-                    {
-                        UserPoolId = _cognitoSettings.UserPoolId,
-                        Username = request.Email,
-                        TemporaryPassword = passwordTemporal,
-                        MessageAction = "SUPPRESS",
-                        UserAttributes = new List<AttributeType>
-                        {
-                            new AttributeType { Name = "name", Value = tenantName },
-                            new AttributeType { Name = "family_name", Value = "Administrator" },
-                            new AttributeType { Name = "email", Value = request.Email },
-                            new AttributeType { Name = "custom:tenant_id", Value = tenantId }
-                        }
-                    };
+                    Name = tenantName,
+                    Lastname = "Administrator",
+                    Email = request.Email,
+                    Roles = new List<string> { "Administrator", "Operator", "Manager" },
+                    OrganizationId = tenantId
+                };
 
-                    await _cognito.AdminCreateUserAsync(cognitoRequest);
-
-                    // 4. Asignar roles de administrador
-                    var adminRoles = new List<string> { "Administrator", "Operator", "Manager" };
-
-                    foreach (var role in adminRoles)
-                    {
-                        try
-                        {
-                            await _cognito.AdminAddUserToGroupAsync(new AdminAddUserToGroupRequest
-                            {
-                                UserPoolId = _cognitoSettings.UserPoolId,
-                                Username = request.Email,
-                                GroupName = role
-                            });
-                        }
-                        catch (ResourceNotFoundException)
-                        {
-                            // El grupo no existe, continuar con el siguiente
-                            continue;
-                        }
-                    }
-
-                    // 5. Retornar éxito con credenciales
-                    return Ok(new
-                    {
-                        message = "Tenant y usuario administrador creados correctamente",
-                        tenantId = tenantId,
-                        tenantName = tenantName,
-                        usuario = request.Email,
-                        passwordTemporal = passwordTemporal
-                    });
-                }
-                catch (UsernameExistsException)
-                {
-                    // Usuario ya existe - idealmente deberías eliminar el tenant aquí
-                    // await _deleteTenant.Execute(tenantId);
-                    return BadRequest(new
-                    {
-                        error = "El email ya está registrado en el sistema.",
-                        detail = "El tenant fue creado pero el usuario no pudo ser asociado. Contacte al administrador."
-                    });
-                }
-                catch (InvalidParameterException ex)
-                {
-                    // Parámetro inválido en Cognito
-                    return BadRequest(new
-                    {
-                        error = "Error de validación al crear el usuario.",
-                        detail = ex.Message
-                    });
-                }
-                catch (Exception cognitoEx)
-                {
-                    // Error general de Cognito
-                    return BadRequest(new
-                    {
-                        error = "Error al crear el usuario administrador.",
-                        detail = cognitoEx.Message
-                    });
-                }
+                return await AddUser(userRequest);
             }
             catch (Exception ex)
             {
@@ -148,7 +73,6 @@ namespace AgoraCertaminaBack.Controllers
             }
         }
 
-        // Endpoint auxiliar para crear admin en tenants existentes (opcional, temporal)
         [AllowAnonymous]
         [HttpPost("tenant/{tenantId}/admin")]
         public async Task<IActionResult> CreateAdminForExistingTenant(
@@ -160,65 +84,26 @@ namespace AgoraCertaminaBack.Controllers
 
             try
             {
-                string passwordTemporal = PasswordGenerator.Generate(12);
-
-                var cognitoRequest = new AdminCreateUserRequest
+                var userRequest = new UserRequest
                 {
-                    UserPoolId = _cognitoSettings.UserPoolId,
-                    Username = request.Email,
-                    TemporaryPassword = passwordTemporal,
-                    MessageAction = "SUPPRESS",
-                    UserAttributes = new List<AttributeType>
-                    {
-                        new AttributeType { Name = "name", Value = request.Name ?? "Admin" },
-                        new AttributeType { Name = "family_name", Value = request.LastName ?? "Administrator" },
-                        new AttributeType { Name = "email", Value = request.Email },
-                        new AttributeType { Name = "custom:tenant_id", Value = tenantId }
-                    }
+                    Name = request.Name ?? "Admin",
+                    Lastname = request.LastName ?? "Administrator",
+                    Email = request.Email,
+                    Roles = new List<string> { "Administrator", "Operator", "Manager" },
+                    OrganizationId = tenantId
                 };
 
-                await _cognito.AdminCreateUserAsync(cognitoRequest);
-
-                var adminRoles = new List<string> { "Administrator", "Operator", "Manager" };
-                foreach (var role in adminRoles)
-                {
-                    try
-                    {
-                        await _cognito.AdminAddUserToGroupAsync(new AdminAddUserToGroupRequest
-                        {
-                            UserPoolId = _cognitoSettings.UserPoolId,
-                            Username = request.Email,
-                            GroupName = role
-                        });
-                    }
-                    catch (ResourceNotFoundException)
-                    {
-                        continue;
-                    }
-                }
-
-                return Ok(new
-                {
-                    message = "Usuario administrador creado correctamente",
-                    usuario = request.Email,
-                    passwordTemporal = passwordTemporal
-                });
-            }
-            catch (UsernameExistsException)
-            {
-                return BadRequest(new { error = "El email ya está registrado en el sistema." });
+                return await AddUser(userRequest);
             }
             catch (Exception ex)
             {
                 return BadRequest(new { error = ex.Message });
             }
         }
-
         #endregion
 
         #region Users
-
-        [AllowAnonymous]
+        [HasPermissionOnAction(Constants.Actions.AddUsers)]
         [HttpPost("register")]
         public async Task<IActionResult> AddUser(UserRequest attributes)
         {
@@ -229,15 +114,15 @@ namespace AgoraCertaminaBack.Controllers
                 var request = new AdminCreateUserRequest
                 {
                     UserPoolId = _cognitoSettings.UserPoolId,
-                    Username = attributes.Email,
+                    Username = attributes.Email, // ✅ Email como username
                     TemporaryPassword = passwordTemporal,
                     MessageAction = "SUPPRESS",
                     UserAttributes = new List<AttributeType>
                     {
                         new AttributeType { Name = "name", Value = attributes.Name },
                         new AttributeType { Name = "family_name", Value = attributes.Lastname },
-                        new AttributeType { Name = "email", Value = attributes.Email },
-                        new AttributeType { Name = "custom:tenant_id", Value = attributes.TenantId ?? _userContext.OrganizationId }
+                        // ✅ NO incluir email - ya está en Username
+                        new AttributeType { Name = "custom:organization_id", Value = attributes.OrganizationId ?? _userContext.OrganizationId }
                     }
                 };
 
@@ -266,24 +151,30 @@ namespace AgoraCertaminaBack.Controllers
                     passwordTemporal = passwordTemporal
                 });
             }
-            catch (UsernameExistsException)
-            {
-                return BadRequest(new
-                {
-                    error = "El usuario ya existe.",
-                    message = "El email ya está registrado en el sistema."
-                });
-            }
-            catch (InvalidParameterException ex)
-            {
-                return BadRequest(new
-                {
-                    error = "Error de validación.",
-                    message = ex.Message
-                });
-            }
             catch (Exception ex)
             {
+                if (ex is UsernameExistsException ||
+                    ex is InvalidParameterException ||
+                    ex.Message.Contains("CreateUser"))
+                {
+                    return BadRequest(new
+                    {
+                        error = "Errores al crear el usuario.",
+                        message = ex.Message
+                    });
+                }
+
+                if (ex is ResourceNotFoundException ||
+                    ex is UserNotFoundException ||
+                    ex.Message.Contains("AddUserToGroup"))
+                {
+                    return BadRequest(new
+                    {
+                        error = "Usuario se ha creado, pero hubo un problema al asignarlo a uno o más grupos.",
+                        message = ex.Message
+                    });
+                }
+
                 return StatusCode(500, new { error = ex.Message });
             }
         }
@@ -292,29 +183,74 @@ namespace AgoraCertaminaBack.Controllers
         [HttpGet("users")]
         public async Task<IActionResult> GetUsers([FromQuery] int? limit = 20, [FromQuery] string? paginationToken = null)
         {
+            var request = new ListUsersRequest
+            {
+                UserPoolId = _cognitoSettings.UserPoolId,
+                Limit = limit ?? 20
+            };
+
+            if (!string.IsNullOrEmpty(paginationToken))
+            {
+                request.PaginationToken = paginationToken;
+            }
+
             try
             {
-                var request = new ListUsersRequest
-                {
-                    UserPoolId = _cognitoSettings.UserPoolId,
-                    Limit = limit ?? 20,
-                    PaginationToken = paginationToken
-                };
-
                 var response = await _cognito.ListUsersAsync(request);
 
-                var users = response.Users.Select(u => new
-                {
-                    u.Username,
-                    Email = u.Attributes?.FirstOrDefault(a => a.Name == "email")?.Value,
-                    Name = u.Attributes?.FirstOrDefault(a => a.Name == "name")?.Value,
-                    LastName = u.Attributes?.FirstOrDefault(a => a.Name == "family_name")?.Value,
-                    TenantId = u.Attributes?.FirstOrDefault(a => a.Name == "custom:tenant_id")?.Value
-                })
-                .Where(u => u.TenantId == _userContext.OrganizationId)
-                .ToList();
+                // ✅ DEBUGGING: Ver qué trae Cognito
+                Console.WriteLine($"Total usuarios en Cognito: {response.Users.Count}");
+                Console.WriteLine($"OrganizationId del contexto: '{_userContext.OrganizationId}'");
 
-                var usersWithRoles = await Task.WhenAll(users.Select(async user =>
+                var users = response.Users.Select(user => new
+                {
+                    Username = user.Username,
+                    Email = user.Attributes?.FirstOrDefault(a => a.Name == "email")?.Value,
+                    Name = user.Attributes?.FirstOrDefault(a => a.Name == "name")?.Value,
+                    LastName = user.Attributes?.FirstOrDefault(a => a.Name == "family_name")?.Value,
+                    OrganizationId = user.Attributes?.FirstOrDefault(a => a.Name == "custom:organization_id")?.Value,
+                }).ToList();
+
+                // ✅ DEBUGGING: Ver los OrganizationId de cada usuario
+                foreach (var u in users)
+                {
+                    Console.WriteLine($"Usuario: {u.Username}, OrgId: '{u.OrganizationId}'");
+                }
+
+                // ✅ Validar que el contexto tenga OrganizationId
+                if (string.IsNullOrEmpty(_userContext.OrganizationId))
+                {
+                    return BadRequest(new { error = "El usuario autenticado no tiene un OrganizationId válido." });
+                }
+
+                // ✅ Filtrar por tenant del usuario loggeado
+                var filteredUsers = users
+                    .Where(u => !string.IsNullOrEmpty(u.OrganizationId) &&
+                               u.OrganizationId.Equals(_userContext.OrganizationId, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                Console.WriteLine($"Usuarios filtrados: {filteredUsers.Count}");
+
+                // Si no hay usuarios después del filtro, retornar información útil
+                if (!filteredUsers.Any())
+                {
+                    return Ok(new
+                    {
+                        users = new List<object>(),
+                        paginationToken = response.PaginationToken,
+                        totalCount = 0,
+                        debug = new
+                        {
+                            totalInCognito = users.Count,
+                            currentOrgId = _userContext.OrganizationId,
+                            usersWithOrgId = users.Count(u => !string.IsNullOrEmpty(u.OrganizationId)),
+                            uniqueOrgIds = users.Select(u => u.OrganizationId).Distinct().ToList()
+                        }
+                    });
+                }
+
+                // Obtener grupos de usuarios en paralelo
+                var usersWithRoles = await Task.WhenAll(filteredUsers.Select(async user =>
                 {
                     var groupsResponse = await _cognito.AdminListGroupsForUserAsync(new AdminListGroupsForUserRequest
                     {
@@ -322,14 +258,16 @@ namespace AgoraCertaminaBack.Controllers
                         Username = user.Username
                     });
 
+                    var roles = groupsResponse.Groups.Select(g => g.GroupName).ToList();
+
                     return new
                     {
                         user.Username,
                         user.Email,
                         user.Name,
                         user.LastName,
-                        user.TenantId,
-                        Roles = groupsResponse.Groups.Select(g => g.GroupName).ToList()
+                        user.OrganizationId,
+                        Roles = roles
                     };
                 }));
 
@@ -342,67 +280,87 @@ namespace AgoraCertaminaBack.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { error = ex.Message });
+                return BadRequest(new { error = ex.Message, stackTrace = ex.StackTrace });
             }
         }
 
-        [AllowAnonymous]
+        [HasPermissionOnAction(Constants.Actions.UpdateUsers)]
         [HttpPut("user/{username}")]
         public async Task<IActionResult> UpdateUserAsync(string username, [FromBody] UserRequest request)
         {
             try
             {
-                var getUserResponse = await _cognito.AdminGetUserAsync(new AdminGetUserRequest
+                // Obtener el usuario
+                var getUserRequest = new AdminGetUserRequest
                 {
                     UserPoolId = _cognitoSettings.UserPoolId,
                     Username = username
-                });
+                };
 
-                var tenantId = getUserResponse.UserAttributes
-                    ?.FirstOrDefault(a => a.Name == "custom:tenant_id")?.Value;
+                var getUserResponse = await _cognito.AdminGetUserAsync(getUserRequest);
 
-                if (tenantId != _userContext.OrganizationId)
+                // Validar OrganizationId
+                var organizationId = getUserResponse.UserAttributes
+                    ?.FirstOrDefault(a => a.Name == "custom:organization_id")?.Value;
+
+                if (string.IsNullOrEmpty(organizationId))
+                {
+                    return BadRequest(new { error = "El usuario no tiene definido el organization_id." });
+                }
+
+                if (organizationId != _userContext.OrganizationId)
+                {
                     return BadRequest(new { error = "El usuario no pertenece al tenant." });
+                }
+
+                // Actualizar atributos del usuario
+                var updateAttributes = new List<AttributeType>
+                {
+                    new AttributeType { Name = "name", Value = request.Name },
+                    new AttributeType { Name = "family_name", Value = request.Lastname }
+                    // ✅ NO actualizar email - está en el username y no se puede cambiar
+                };
 
                 await _cognito.AdminUpdateUserAttributesAsync(new AdminUpdateUserAttributesRequest
                 {
                     UserPoolId = _cognitoSettings.UserPoolId,
                     Username = username,
-                    UserAttributes = new List<AttributeType>
-                    {
-                        new AttributeType { Name = "name", Value = request.Name },
-                        new AttributeType { Name = "family_name", Value = request.Lastname },
-                        new AttributeType { Name = "email", Value = request.Email }
-                    }
+                    UserAttributes = updateAttributes
                 });
 
+                // Actualizar grupos
                 var currentGroups = await _cognito.AdminListGroupsForUserAsync(new AdminListGroupsForUserRequest
                 {
                     UserPoolId = _cognitoSettings.UserPoolId,
                     Username = username
                 });
 
-                var currentGroupNames = currentGroups.Groups.Select(g => g.GroupName).ToHashSet();
-                var newGroupNames = request.Roles.Distinct().ToHashSet();
+                var currentGroupNames = currentGroups.Groups.Select(g => g.GroupName).ToHashSet(StringComparer.OrdinalIgnoreCase);
+                var newGroupNames = request.Roles.Distinct(StringComparer.OrdinalIgnoreCase).ToHashSet();
 
+                // Eliminar grupos que ya no están
                 var groupsToRemove = currentGroupNames.Except(newGroupNames);
-                var groupsToAdd = newGroupNames.Except(currentGroupNames);
-
                 foreach (var groupName in groupsToRemove)
+                {
                     await _cognito.AdminRemoveUserFromGroupAsync(new AdminRemoveUserFromGroupRequest
                     {
                         UserPoolId = _cognitoSettings.UserPoolId,
                         Username = username,
                         GroupName = groupName
                     });
+                }
 
+                // Agregar nuevos grupos
+                var groupsToAdd = newGroupNames.Except(currentGroupNames);
                 foreach (var groupName in groupsToAdd)
+                {
                     await _cognito.AdminAddUserToGroupAsync(new AdminAddUserToGroupRequest
                     {
                         UserPoolId = _cognitoSettings.UserPoolId,
                         Username = username,
                         GroupName = groupName
                     });
+                }
 
                 return Ok(new { message = "Usuario actualizado correctamente." });
             }
@@ -412,7 +370,7 @@ namespace AgoraCertaminaBack.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = ex.Message });
+                return StatusCode(500, new { error = "Error al actualizar el usuario.", detail = ex.Message });
             }
         }
 
@@ -422,23 +380,37 @@ namespace AgoraCertaminaBack.Controllers
         {
             try
             {
-                var getUserResponse = await _cognito.AdminGetUserAsync(new AdminGetUserRequest
+                // Obtener el usuario desde Cognito
+                var getUserRequest = new AdminGetUserRequest
                 {
                     UserPoolId = _cognitoSettings.UserPoolId,
                     Username = username
-                });
+                };
 
-                var tenantId = getUserResponse.UserAttributes
-                    ?.FirstOrDefault(a => a.Name == "custom:tenant_id")?.Value;
+                var getUserResponse = await _cognito.AdminGetUserAsync(getUserRequest);
 
-                if (tenantId != _userContext.OrganizationId)
+                // Obtener el atributo OrganizationId
+                var organizationId = getUserResponse.UserAttributes
+                    ?.FirstOrDefault(attr => attr.Name == "custom:organization_id")?.Value;
+
+                if (string.IsNullOrEmpty(organizationId))
+                {
+                    return BadRequest(new { error = "El usuario no tiene definido el organization_id." });
+                }
+
+                if (organizationId != _userContext.OrganizationId)
+                {
                     return BadRequest(new { error = "El usuario no pertenece al tenant." });
+                }
 
-                await _cognito.AdminDeleteUserAsync(new AdminDeleteUserRequest
+                // Eliminar el usuario
+                var deleteRequest = new AdminDeleteUserRequest
                 {
                     UserPoolId = _cognitoSettings.UserPoolId,
                     Username = username
-                });
+                };
+
+                await _cognito.AdminDeleteUserAsync(deleteRequest);
 
                 return NoContent();
             }
@@ -448,14 +420,40 @@ namespace AgoraCertaminaBack.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = ex.Message });
+                return BadRequest(new { error = ex.Message });
             }
         }
 
+        [HasPermissionOnAction(Constants.Actions.ReadGroups)]
+        [HttpGet("groups")]
+        public async Task<IActionResult> GetAllGroups()
+        {
+            var request = new ListGroupsRequest
+            {
+                UserPoolId = _cognitoSettings.UserPoolId,
+                Limit = 60
+            };
+
+            try
+            {
+                var response = await _cognito.ListGroupsAsync(request);
+
+                var groups = response.Groups.Select(g => new
+                {
+                    groupName = g.GroupName,
+                    description = g.Description
+                }).ToList();
+
+                return Ok(groups);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "Error al obtener la lista de grupos.", detail = ex.Message });
+            }
+        }
         #endregion
     }
 
-    // DTO adicional para crear admin en tenant existente
     public class CreateAdminRequest
     {
         public string? Name { get; set; }

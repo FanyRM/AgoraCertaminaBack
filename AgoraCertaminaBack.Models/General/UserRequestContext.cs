@@ -35,7 +35,7 @@ namespace AgoraCertaminaBack.Models.General
         public const string Email = "email";
         public const string Name = "name";
         public const string FamilyName = "family_name";
-        public const string TenantId = "custom:tenant_id"; // Tu atributo personalizado
+        public const string OrganizationId = "custom:organization_id"; // Tu atributo personalizado
         public const string Groups = "cognito:groups"; // Roles/grupos de Cognito
         public const string Username = "cognito:username";
 

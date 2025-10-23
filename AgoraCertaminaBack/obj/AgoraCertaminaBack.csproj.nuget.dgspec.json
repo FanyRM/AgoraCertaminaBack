@@ -402,6 +402,10 @@
               "target": "Package",
               "version": "[4.0.3.7, )"
             },
+            "AWSSDK.SecurityToken": {
+              "target": "Package",
+              "version": "[4.0.2.9, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[9.0.10, )"

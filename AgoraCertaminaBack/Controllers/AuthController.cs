@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using AgoraCertaminaBack.Authorization.Settings;
 using System.Text;
 using static AgoraCertaminaBack.Authorization.AuthenticationEntities;
-using Microsoft.AspNetCore.Http; // Necesario para CookieOptions
+using Microsoft.AspNetCore.Http;
 
 namespace AgoraCertaminaBack.Controllers
 {
@@ -15,19 +15,15 @@ namespace AgoraCertaminaBack.Controllers
     {
         private readonly HttpClient _httpClient;
         private readonly ICognitoSettings _cognitoSettings;
-
         private readonly string _BasicAuth;
 
         public AuthController(HttpClient httpClient, ICognitoSettings cognitoSettings)
         {
             _httpClient = httpClient;
             _cognitoSettings = cognitoSettings;
-
-            // Construir el Basic Auth para las peticiones al endpoint /oauth2/token
             _BasicAuth = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{_cognitoSettings.ClientId}:{_cognitoSettings.ClientSecret}"));
         }
 
-        // POST /auth/exchange/{code}
         [AllowAnonymous]
         [HttpPost("exchange/{code}")]
         public async Task<ActionResult<TokenDTO>> Exchange(string code)
@@ -38,7 +34,6 @@ namespace AgoraCertaminaBack.Controllers
             return await ExchangeCode(code);
         }
 
-        // POST /auth/refresh
         [AllowAnonymous]
         [HttpPost("refresh")]
         public async Task<ActionResult<TokenDTO>> RefreshToken()
@@ -51,7 +46,6 @@ namespace AgoraCertaminaBack.Controllers
             return await ExchangeNewTokens(refreshTokenFromCookie);
         }
 
-        // POST /auth/logout
         [AllowAnonymous]
         [HttpPost("logout")]
         public ActionResult Logout()
@@ -90,10 +84,9 @@ namespace AgoraCertaminaBack.Controllers
                 if (tokenResponse == null)
                     return StatusCode(500, new { message = "An error occurred during token deserialization" });
 
-                // Almacenar el Refresh Token en una cookie HttpOnly
                 SetHttpOnlyCookie("refresh_token", tokenResponse.RefreshToken, tokenResponse.ExpiresIn);
 
-                // Devolver el ID Token y ExpiresIn al cliente
+                // ✅ CORRECCIÓN: Devolver el ID Token en lugar del Access Token
                 return Ok(new TokenDTO(tokenResponse.IDToken, tokenResponse.ExpiresIn));
             }
             catch (Exception ex)
@@ -132,7 +125,7 @@ namespace AgoraCertaminaBack.Controllers
                 if (tokenResponse == null)
                     return StatusCode(500, new { message = "An error occurred during token deserialization" });
 
-                // Devolver el nuevo ID Token y Access Token
+                // ✅ CORRECCIÓN: Devolver el ID Token en lugar del Access Token
                 return Ok(new TokenDTO(tokenResponse.IDToken, tokenResponse.ExpiresIn));
             }
             catch (Exception ex)
@@ -141,7 +134,6 @@ namespace AgoraCertaminaBack.Controllers
             }
         }
 
-        // 🛠️ FUNCIÓN CORREGIDA: Ajusta SameSite y Secure para desarrollo en localhost
         private void SetHttpOnlyCookie(string Key, string Value, int expiresInSeconds)
         {
             var isLocalhost = HttpContext.Request.Host.Host.Contains("localhost");
@@ -152,9 +144,8 @@ namespace AgoraCertaminaBack.Controllers
                 IsEssential = true,
                 Expires = DateTime.UtcNow.AddSeconds(_cognitoSettings.RefreshTokenExpiresIn),
                 Path = "/",
-                // ✅ Para localhost con HTTPS, usar SameSite.None con Secure=true
                 SameSite = isLocalhost ? SameSiteMode.None : SameSiteMode.Lax,
-                Secure = true // ✅ Siempre true porque backend está en HTTPS
+                Secure = true
             };
 
             HttpContext!.Response.Cookies.Append(Key, Value, cookieOptions);

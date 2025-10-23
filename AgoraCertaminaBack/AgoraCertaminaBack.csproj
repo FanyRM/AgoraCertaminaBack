@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="4.0.3.10" />
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.7" />
+    <PackageReference Include="AWSSDK.SecurityToken" Version="4.0.2.9" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
     <PackageReference Include="Netmentor.ROP" Version="1.12.0" />
