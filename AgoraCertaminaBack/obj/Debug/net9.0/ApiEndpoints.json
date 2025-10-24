@@ -121,22 +121,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
-    "RelativePath": "api/debug/aws-config",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__5",
     "RelativePath": "api/health",
@@ -255,6 +239,37 @@
     ]
   },
   {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormTagsController",
+    "Method": "DeleteFormTag",
+    "RelativePath": "form-tags/{formId}/{schemaTagId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "schemaTagId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AgoraCertaminaBack.Controllers.FormController",
     "Method": "GetByIdFormDTO",
     "RelativePath": "form/{formId}",
@@ -317,6 +332,213 @@
     "ReturnTypes": [
       {
         "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.Tenant.TenantDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.CustomerCatalogsController",
+    "Method": "CreateTenantCatalog",
+    "RelativePath": "tenant-catalogs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Models.DTOs.CustomCatalog.CreateCustomCatalogRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.CustomerCatalogsController",
+    "Method": "GetAllTenantCatalogs",
+    "RelativePath": "tenant-catalogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.CustomCatalog.CustomCatalogDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.CustomerCatalogsController",
+    "Method": "GetByIdTenantCatalog",
+    "RelativePath": "tenant-catalogs/{catalogId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "catalogId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.CustomCatalog.CustomCatalogDTO, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.CustomerCatalogsController",
+    "Method": "UpdateTenantCatalogValues",
+    "RelativePath": "tenant-catalogs/{catalogId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "catalogId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Models.DTOs.CustomCatalog.UpdateCustomCatalogValuesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.CustomerCatalogsController",
+    "Method": "DeleteTenantCatalog",
+    "RelativePath": "tenant-catalogs/{catalogId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "catalogId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.TenantTagsController",
+    "Method": "CreateTenantTag",
+    "RelativePath": "tenant-tags",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Models.DTOs.CustomTag.CustomTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.TenantTagsController",
+    "Method": "GetAllTenantTags",
+    "RelativePath": "tenant-tags",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categories",
+        "Type": "System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.CustomTag.TagCategory, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.Entities.Tag, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.TenantTagsController",
+    "Method": "DeleteTenantTag",
+    "RelativePath": "tenant-tags/{tenantTagId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantTagId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1,6 +1,7 @@
-﻿using AgoraCertaminaBack.Models.Entities.Interfaces;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using AgoraCertaminaBack.Models.DTOs.CustomTag;
+using AgoraCertaminaBack.Models.Entities.Interfaces;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace AgoraCertaminaBack.Models.Entities
 {
@@ -15,6 +16,9 @@ namespace AgoraCertaminaBack.Models.Entities
 
         [BsonElement("color"), BsonRepresentation(BsonType.String)]
         public required string Color { get; set; }
+
+        [BsonElement("category"), BsonRepresentation(BsonType.String)]
+        public TagCategory Category { get; set; }
 
         [BsonElement("created_at"), BsonRepresentation(BsonType.DateTime)]
         public DateTime CreatedAt { get; set; } = DateTime.Now;

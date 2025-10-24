@@ -24,7 +24,7 @@ namespace AgoraCertaminaBack.UseCases
 
     public record class TenantTagUseCases(
         CreateTenantTag CreateTenantTag,
-        //GetAllTenantTags GetAllTenantTags,
+        GetAllTenantTags GetAllTenantTags,
         GetByIdTenantTag GetByIdTenantTag,
         UpdateTenantTag UpdateTenantTag,
         DeleteTenantTag DeleteTenantTag

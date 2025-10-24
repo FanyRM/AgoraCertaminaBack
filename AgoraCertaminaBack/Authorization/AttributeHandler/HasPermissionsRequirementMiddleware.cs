@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization.Policy;
 using AgoraCertaminaBack.Models.Response;
 using System.Text.Json;
-using AgoraCertaminaBack.Models.Response;
 
 namespace AgoraCertaminaBack.Authorization.AttributeHandler
 {

@@ -39,7 +39,6 @@ namespace AgoraCertaminaBack.Controllers
         public async Task<ActionResult<TokenDTO>> RefreshToken()
         {
             var refreshTokenFromCookie = HttpContext.Request.Cookies["refresh_token"];
-
             if (string.IsNullOrEmpty(refreshTokenFromCookie))
                 return BadRequest(new { message = "RefreshToken value is missing" });
 
@@ -80,13 +79,11 @@ namespace AgoraCertaminaBack.Controllers
                 }
 
                 var tokenResponse = JsonConvert.DeserializeObject<TokenResponse>(result);
-
                 if (tokenResponse == null)
                     return StatusCode(500, new { message = "An error occurred during token deserialization" });
 
                 SetHttpOnlyCookie("refresh_token", tokenResponse.RefreshToken, tokenResponse.ExpiresIn);
 
-                // ✅ CORRECCIÓN: Devolver el ID Token en lugar del Access Token
                 return Ok(new TokenDTO(tokenResponse.IDToken, tokenResponse.ExpiresIn));
             }
             catch (Exception ex)
@@ -121,11 +118,9 @@ namespace AgoraCertaminaBack.Controllers
                 }
 
                 var tokenResponse = JsonConvert.DeserializeObject<TokenResponse>(result);
-
                 if (tokenResponse == null)
                     return StatusCode(500, new { message = "An error occurred during token deserialization" });
 
-                // ✅ CORRECCIÓN: Devolver el ID Token en lugar del Access Token
                 return Ok(new TokenDTO(tokenResponse.IDToken, tokenResponse.ExpiresIn));
             }
             catch (Exception ex)
@@ -137,7 +132,6 @@ namespace AgoraCertaminaBack.Controllers
         private void SetHttpOnlyCookie(string Key, string Value, int expiresInSeconds)
         {
             var isLocalhost = HttpContext.Request.Host.Host.Contains("localhost");
-
             var cookieOptions = new CookieOptions
             {
                 HttpOnly = true,
@@ -147,14 +141,12 @@ namespace AgoraCertaminaBack.Controllers
                 SameSite = isLocalhost ? SameSiteMode.None : SameSiteMode.Lax,
                 Secure = true
             };
-
             HttpContext!.Response.Cookies.Append(Key, Value, cookieOptions);
         }
 
         private void DeleteHttpOnlyCookie(string Key)
         {
             var isLocalhost = HttpContext.Request.Host.Host.Contains("localhost");
-
             var cookieOptions = new CookieOptions
             {
                 HttpOnly = true,
@@ -164,7 +156,6 @@ namespace AgoraCertaminaBack.Controllers
                 SameSite = isLocalhost ? SameSiteMode.None : SameSiteMode.Lax,
                 Secure = true
             };
-
             HttpContext!.Response.Cookies.Append(Key, string.Empty, cookieOptions);
         }
     }
