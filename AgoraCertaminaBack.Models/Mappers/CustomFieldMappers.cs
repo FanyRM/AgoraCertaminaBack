@@ -18,8 +18,6 @@ namespace AgoraCertaminaBack.Models.Mappers
                 IsRequired = request.IsRequired,
                 CreatedAt = DateTime.UtcNow,
                 IsActive = true,
-                Section = string.IsNullOrWhiteSpace(request.Section) ? null : request.Section,
-                SubSection = string.IsNullOrWhiteSpace(request.SubSection) ? null : request.SubSection,
                 Order = request.Order,
                 StaticValue =request.StaticValue
                

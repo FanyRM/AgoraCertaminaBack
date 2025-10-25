@@ -1,0 +1,41 @@
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.csproj.AssemblyReference.cache
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.AssemblyInfoInputs.cache
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.AssemblyInfo.cs
+C:\proyects\AgoraCertamina\AgoraCertamina-Back\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.csproj.CoreCompileInputs.cache
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Data.deps.json
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Data.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Data.pdb
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Models.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Services.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Models.pdb
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Services.pdb
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.csproj.AssemblyReference.cache
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.AssemblyInfoInputs.cache
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.AssemblyInfo.cs
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.csproj.CoreCompileInputs.cache
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.sourcelink.json
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCer.E1B28900.Up2Date
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\refint\AgoraCertaminaBack.Data.dll
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.pdb
+C:\proyects\AgoraCertamina\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\ref\AgoraCertaminaBack.Data.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Data.deps.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Data.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Data.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Models.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Services.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Models.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\bin\Debug\net9.0\AgoraCertaminaBack.Services.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.csproj.AssemblyReference.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.AssemblyInfoInputs.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.AssemblyInfo.cs
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.csproj.CoreCompileInputs.cache
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.sourcelink.json
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCer.E1B28900.Up2Date
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\refint\AgoraCertaminaBack.Data.dll
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\AgoraCertaminaBack.Data.pdb
+C:\UTNG\7. SEPTIMO CUATRIMETRE\ARQUITECTURA DE SOFTWARE\UNIDAD II\APLICATIVO\AgoraCertaminaBack\AgoraCertaminaBack.Data\obj\Debug\net9.0\ref\AgoraCertaminaBack.Data.dll
