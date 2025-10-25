@@ -2,6 +2,7 @@
 using MongoDB.Bson;
 using AgoraCertaminaBack.Models.DTOs.CustomTag;
 using AgoraCertaminaBack.Models.DTOs.Form.FormTag;
+using AgoraCertaminaBack.Models.DTOs.SchemaContest;
 
 namespace AgoraCertaminaBack.Models.Mappers
 {
@@ -18,6 +19,18 @@ namespace AgoraCertaminaBack.Models.Mappers
         }
 
         public static Tag ToCustomTag(this ActionFormTagRequest request)
+        {
+            return new Tag
+            {
+                Id = string.IsNullOrEmpty(request.Id) ? ObjectId.GenerateNewId().ToString() : request.Id,
+                Name = request.Name,
+                Color = request.Color,
+                CreatedAt = DateTime.UtcNow,
+                IsActive = true
+            };
+        }
+
+        public static Tag ToCustomTag(this SchemaTagRequest request)
         {
             return new Tag
             {

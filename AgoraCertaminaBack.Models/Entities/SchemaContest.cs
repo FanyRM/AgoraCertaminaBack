@@ -1,9 +1,8 @@
-﻿using AgoraCertaminaBack.Models.Entities;
-using AgoraCertaminaBack.Models.Entities.Interfaces;
+﻿using AgoraCertaminaBack.Models.Entities.Interfaces;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace ControlStockAPI.Models.Entities
+namespace AgoraCertaminaBack.Models.Entities
 {
     public class SchemaContest : IEntity, ICustomerAttribute
     {
@@ -17,8 +16,8 @@ namespace ControlStockAPI.Models.Entities
         [BsonElement("schema_name"), BsonRepresentation(BsonType.String)]
         public required string SchemaName { get; set; }
 
-        [BsonElement("customer_name"), BsonRepresentation(BsonType.String)]
-        public required string CustomerName { get; set; }
+        [BsonElement("organization_name"), BsonRepresentation(BsonType.String)]
+        public required string OrganizationName { get; set; }
 
         [BsonElement("schema_fields")]
         public List<Field> SchemaFields { get; set; } = new List<Field>();

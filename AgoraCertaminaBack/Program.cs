@@ -4,10 +4,10 @@ using AgoraCertaminaBack.Data;
 using AgoraCertaminaBack.Data.Settings;
 using AgoraCertaminaBack.Middlewares;
 using AgoraCertaminaBack.Models.General;
+using AgoraCertaminaBack.Services;
 using AgoraCertaminaBack.UseCases;
 using Amazon;
 using Amazon.CognitoIdentityProvider;
-using Amazon.Extensions.NETCore.Setup;
 using Amazon.Runtime;
 using Amazon.Runtime.CredentialManagement;
 using Amazon.SecurityToken;
@@ -17,6 +17,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Security.Claims;
+using AgoraCertaminaBack.Services.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 var isDevelopment = builder.Environment.IsDevelopment();
@@ -29,6 +30,8 @@ var mongoDBSettings = builder.Configuration.GetSection("MongoDB").Get<MongoDBSet
     ?? throw new Exception("MongoDB settings not found");
 var cognitoSettings = builder.Configuration.GetSection("Cognito").Get<CognitoSettings>()
     ?? throw new Exception("Cognito settings not found");
+var serviceSettings = builder.Configuration.GetSection("ServiceSettings").Get<ServiceSettings>()
+    ?? throw new Exception("ServiceSettings not found");
 
 AWSCredentials? awsCredentials = null;
 var regionEndpoint = RegionEndpoint.GetBySystemName(awsRegion);
@@ -67,6 +70,7 @@ else
 builder.Services.AddSingleton<ICognitoSettings>(cognitoSettings);
 builder.Services.AddData(mongoDBSettings);
 builder.Services.AddUseCases();
+builder.Services.AddExternalServices(serviceSettings);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpClient();
