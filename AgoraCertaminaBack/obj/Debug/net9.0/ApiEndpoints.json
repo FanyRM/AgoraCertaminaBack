@@ -239,6 +239,156 @@
     ]
   },
   {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormFieldsController",
+    "Method": "CreateFormField",
+    "RelativePath": "form-fields/{formId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Models.DTOs.CustomField.CustomFieldRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormFieldsController",
+    "Method": "GetAllFormFieldsById",
+    "RelativePath": "form-fields/{formId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.Entities.CustomField, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormFieldsController",
+    "Method": "UpdateFormField",
+    "RelativePath": "form-fields/{formId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "AgoraCertaminaBack.Models.DTOs.Form.FormFields.UpdateFormFieldRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[AgoraCertaminaBack.Models.Entities.CustomField, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormFieldsController",
+    "Method": "DeleteFormField",
+    "RelativePath": "form-fields/{formId}/{fieldId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fieldId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[ROP.Unit, ROP, Version=1.12.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AgoraCertaminaBack.Controllers.FormFieldsController",
+    "Method": "UpdateFormFieldsOrder",
+    "RelativePath": "form-fields/order/{formId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "System.Collections.Generic.List\u00601[[AgoraCertaminaBack.Models.DTOs.CustomField.ReorderFormFieldsRequest, AgoraCertaminaBack.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AgoraCertaminaBack.Models.Response.GenericResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AgoraCertaminaBack.Controllers.FormTagsController",
     "Method": "DeleteFormTag",
     "RelativePath": "form-tags/{formId}/{schemaTagId}",
