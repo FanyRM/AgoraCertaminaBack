@@ -22,7 +22,7 @@ namespace AgoraCertaminaBack.Controllers
         }
 
         [HttpGet("{schemaId}")]
-        public async Task<ActionResult<GenericResponse<List<CustomField>>>> GetAllSchemaFields(string schemaId)
+        public async Task<ActionResult<GenericResponse<List<Field>>>> GetAllSchemaFields(string schemaId)
         {
             return await _schemaFields.GetAllSchemaFields.Execute(schemaId)
                 .ToGenericResponse()
@@ -30,7 +30,7 @@ namespace AgoraCertaminaBack.Controllers
         }
 
         [HttpPut("edit-field/{schemaId}")]
-        public async Task<ActionResult<GenericResponse<CustomField>>> EditSchemaField(string schemaId, [FromBody] UpdateSchemaFieldRequest request)
+        public async Task<ActionResult<GenericResponse<Field>>> EditSchemaField(string schemaId, [FromBody] UpdateSchemaFieldRequest request)
         {
 
             return await _schemaFields.EditSchemaField.Execute(schemaId, request)

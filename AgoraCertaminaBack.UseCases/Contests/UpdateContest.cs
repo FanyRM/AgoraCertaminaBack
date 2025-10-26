@@ -5,6 +5,7 @@ using AgoraCertaminaBack.Models.Entities;
 using AgoraCertaminaBack.Models.General;
 using AgoraCertaminaBack.Services.Interfaces;
 using AgoraCertaminaBack.UseCases.Shared;
+using AgoraCertaminaBack.Models.Mappers;
 using MongoDB.Bson;
 using ROP;
 using System;
@@ -65,7 +66,10 @@ namespace AgoraCertaminaBack.UseCases.Contests
         {
             try
             {
-                var result = await UpdateFieldsAsync(contest, updateRequest.Fields)
+                contest.ApplyUpdateToContest(updateRequest);
+
+                var result = await UpdateContestImageAsync(contest, updateRequest.ImageUrl)
+                    .Bind(_ => UpdateFieldsAsync(contest, updateRequest.Fields))
                     .Bind(_ => UpdateTags(contest, updateRequest.Tags))
                     .Bind(_ => SaveContestAsync(contest));
 
@@ -82,6 +86,83 @@ namespace AgoraCertaminaBack.UseCases.Contests
             catch (Exception ex)
             {
                 return Result.Failure<string>($"Error updating contest: {ex.Message}");
+            }
+        }
+
+        private async Task<Result<string>> UpdateContestImageAsync(Contest contest, string imageUrlValue)
+        {
+            // Si el valor está vacío o es nulo, eliminar la imagen anterior
+            if (string.IsNullOrWhiteSpace(imageUrlValue) || EmptyValues.Contains(imageUrlValue.Trim()))
+            {
+                if (!string.IsNullOrEmpty(contest.ImageUrl))
+                {
+                    try
+                    {
+                        await _fileManager.DeleteFileAsync(contest.ImageUrl);
+                    }
+                    catch (Exception)
+                    {
+                        // Error al eliminar, continuar
+                    }
+                }
+                contest.ImageUrl = string.Empty;
+                return Result.Success("Image removed");
+            }
+
+            try
+            {
+                // Intentar deserializar como FieldFileRequest (nueva imagen)
+                var imageFile = JsonSerializer.Deserialize<FieldFileRequest>(imageUrlValue);
+
+                if (imageFile != null && !string.IsNullOrEmpty(imageFile.Content))
+                {
+                    // Es una nueva imagen, subirla
+                    string pathBase = BuildPathBase(contest);
+                    string imagePath = $"{pathBase}/contest-image/{Guid.NewGuid()}_{imageFile.Name}";
+
+                    bool uploaded = await _fileManager.UploadFileAsync(imagePath, imageFile.ContentStream);
+
+                    if (!uploaded)
+                    {
+                        return Result.Failure<string>("Error uploading contest image");
+                    }
+
+                    // Eliminar imagen anterior si existe
+                    if (!string.IsNullOrEmpty(contest.ImageUrl))
+                    {
+                        try
+                        {
+                            await _fileManager.DeleteFileAsync(contest.ImageUrl);
+                        }
+                        catch (Exception)
+                        {
+                            // Error al eliminar la imagen anterior, continuar
+                        }
+                    }
+
+                    contest.ImageUrl = imagePath;
+                    return Result.Success("Image updated");
+                }
+                else
+                {
+                    // Es una ruta existente (no cambiar la imagen)
+                    // Mantener el valor actual si parece ser una URL/ruta válida
+                    if (!imageUrlValue.StartsWith("{") && !imageUrlValue.StartsWith("["))
+                    {
+                        contest.ImageUrl = imageUrlValue;
+                    }
+                    return Result.Success("Image path maintained");
+                }
+            }
+            catch (JsonException)
+            {
+                // No es JSON, probablemente es una ruta de archivo existente
+                contest.ImageUrl = imageUrlValue;
+                return Result.Success("Image path updated");
+            }
+            catch (Exception ex)
+            {
+                return Result.Failure<string>($"Error processing contest image: {ex.Message}");
             }
         }
 
@@ -269,7 +350,7 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
         private static string BuildPathBase(Contest contest)
         {
-            return $"{contest.CustomerName}/{contest.SchemaName}/{contest.ReferenceNumber}";
+            return $"{contest.OrganizationName}/{contest.SchemaName}/{contest.ReferenceNumber}";
         }
 
         private static IEnumerable<FieldFileRequest>? DeserializeFiles(string fieldValue)

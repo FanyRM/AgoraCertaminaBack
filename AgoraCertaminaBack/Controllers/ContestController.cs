@@ -53,6 +53,14 @@ namespace AgoraCertaminaBack.Controllers
                 .ToActionResult();
         }
 
+        [HttpPut("status/{contestId}")]
+        public async Task<ActionResult<GenericResponse<string>>> UpdateStatusContest(string contestId, [FromBody] ContestStatusUpdateRequest request)
+        {
+            return await _contestsUseCases.UpdateStatusContest.Execute(contestId, request)
+                .ToGenericResponse()
+                .ToActionResult();
+        }
+
         [HttpDelete("{contestId}")]
         public async Task<ActionResult<GenericResponse<Unit>>> DeleteByIdCustomer(string contestId)
         {

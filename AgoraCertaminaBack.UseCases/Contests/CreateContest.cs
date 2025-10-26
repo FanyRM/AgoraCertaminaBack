@@ -24,6 +24,7 @@ namespace AgoraCertaminaBack.UseCases.Contests
                 .Bind(customer => _getByIdSchema.Execute(request.SchemaId)
                     .Map(schema => (customer, schema)))
                 .Bind(tuple => AddContestWithoutFiles(tuple.customer, request))
+                .Bind(contest => UploadContestImage(contest, request))
                 .Bind(idContest => UploadFilesFromFields(idContest, request));
 
             return result;
@@ -33,9 +34,10 @@ namespace AgoraCertaminaBack.UseCases.Contests
         {
             var contest = request.ConvertToContest();
 
-            contest.ReferenceNumber = StringUtilities.CreateReferenceNumber("CSA");
+            contest.ReferenceNumber = StringUtilities.CreateReferenceNumber("ACC");
             contest.OrganizationId = tenant.Id;
-            contest.CustomerName = tenant.TenantName;
+            contest.OrganizationName = tenant.TenantName;
+            contest.ImageUrl = string.Empty;
 
             //Ignorar los campos que no son de tipo imagen o archivo, se registrarán al final, despues del guardado
             var fieldsWithoutFiles = contest.Fields
@@ -50,9 +52,50 @@ namespace AgoraCertaminaBack.UseCases.Contests
             return contest.Success();
         }
 
+        public async Task<Result<Contest>> UploadContestImage(Contest contestRegistered, CreateContestRequest request)
+        {
+            // Si no hay ImageUrl en el request, mantener vacío y continuar
+            if (string.IsNullOrWhiteSpace(request.ImageUrl))
+            {
+                return contestRegistered.Success();
+            }
+
+            try
+            {
+                // Deserializar la imagen del contest
+                var imageFile = JsonSerializer.Deserialize<FieldFileRequest>(request.ImageUrl);
+
+                if (imageFile == null)
+                {
+                    return Result.Failure<Contest>("Error al deserializar la imagen del contest");
+                }
+
+                // Construir la ruta base para la imagen
+                string pathBase = $"{contestRegistered.OrganizationName}/{request.SchemaName}/{contestRegistered.ReferenceNumber}";
+                string imagePath = $"{pathBase}/contest-image/{imageFile.Name}";
+
+                // Subir el archivo
+                bool saved = await _fileManager.UploadFileAsync(imagePath, imageFile.ContentStream);
+
+                if (!saved)
+                {
+                    return Result.Failure<Contest>("Error al guardar la imagen del contest");
+                }
+
+                // Actualizar el contest con la ruta de la imagen
+                contestRegistered.ImageUrl = imagePath;
+
+                return contestRegistered.Success();
+            }
+            catch (Exception ex)
+            {
+                return Result.Failure<Contest>($"Error al procesar la imagen del contest: {ex.Message}");
+            }
+        }
+
         public async Task<Result<string>> UploadFilesFromFields(Contest contestRegistered, CreateContestRequest request)
         {
-            string pathBase = $"{contestRegistered.CustomerName}/{request.SchemaName}/{contestRegistered.ReferenceNumber}";
+            string pathBase = $"{contestRegistered.OrganizationName}/{request.SchemaName}/{contestRegistered.ReferenceNumber}";
 
             Contest contestWithFiles = contestRegistered;
 

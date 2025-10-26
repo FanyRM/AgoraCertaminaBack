@@ -4,6 +4,7 @@
     {
         ReasonsForRemoval,
         Personal,
-        Form
+        Form,
+        Contest
     }
 }
