@@ -14,7 +14,8 @@ namespace AgoraCertaminaBack.Models.Mappers
             {
                 Id = ObjectId.GenerateNewId().ToString(),
                 Name = request.Name,
-                Color = request.Color
+                Color = request.Color,
+                Category = request.Category,
             };
         }
 
@@ -48,7 +49,8 @@ namespace AgoraCertaminaBack.Models.Mappers
             {
                 Id = tag.Id,
                 Name = tag.Name,
-                Color = tag.Color
+                Color = tag.Color,
+                Category = tag.Category,
             };
         }
 
