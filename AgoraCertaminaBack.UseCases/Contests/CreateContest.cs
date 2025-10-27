@@ -71,8 +71,9 @@ namespace AgoraCertaminaBack.UseCases.Contests
                 }
 
                 // Construir la ruta base para la imagen
+                var encodedFileName = Uri.EscapeDataString(imageFile.Name);
                 string pathBase = $"{contestRegistered.OrganizationName}/{request.SchemaName}/{contestRegistered.ReferenceNumber}";
-                string imagePath = $"{pathBase}/contest-image/{imageFile.Name}";
+                string imagePath = $"{pathBase}/contest-image/{encodedFileName}";
 
                 // Subir el archivo
                 bool saved = await _fileManager.UploadFileAsync(imagePath, imageFile.ContentStream);
@@ -118,7 +119,8 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
                     foreach (var file in files)
                     {
-                        string savePath = pathBase + "/" + file.Name;
+                        var encodedFileName = Uri.EscapeDataString(file.Name);
+                        string savePath = pathBase + "/" + encodedFileName;
                         bool saved = await _fileManager.UploadFileAsync(savePath, file.ContentStream);
 
                         if (saved) allPaths.Add(savePath);

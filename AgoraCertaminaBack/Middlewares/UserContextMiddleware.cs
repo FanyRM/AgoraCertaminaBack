@@ -42,8 +42,9 @@ namespace AgoraCertaminaBack.Middlewares
                 "/auth/exchange",
                 "/auth/logout",
                 "/api/health",
-                "/api/get-all-contests",
-                "/api/get-file"
+                "/contests/get-all-contests",
+                "/contests/get-file",
+                "/contest/free-get-contest"
             };
 
             // Verifica si la ruta contiene alguno de los patrones definidos

@@ -55,6 +55,15 @@ namespace AgoraCertaminaBack.Controllers
                 .ToActionResult();
         }
 
+        [AllowAnonymous]
+        [HttpGet("free-get-contest/{contestId}")]
+        public async Task<ActionResult<GenericResponse<ContestDTO>>> GetFreeContestById(string contestId)
+        {
+            return await _contestsUseCases.GetFreeContestById.Execute(contestId)
+                .ToGenericResponse()
+                .ToActionResult();
+        }
+
         [HttpPut("{contestId}")]
         public async Task<ActionResult<GenericResponse<string>>> UpdateContest(string contestId, [FromBody] ContestUpdateRequest request)
         {

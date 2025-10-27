@@ -117,8 +117,9 @@ namespace AgoraCertaminaBack.UseCases.Contests
                 if (imageFile != null && !string.IsNullOrEmpty(imageFile.Content))
                 {
                     // Es una nueva imagen, subirla
+                    var encodedFileName = Uri.EscapeDataString(imageFile.Name);
                     string pathBase = BuildPathBase(contest);
-                    string imagePath = $"{pathBase}/contest-image/{Guid.NewGuid()}_{imageFile.Name}";
+                    string imagePath = $"{pathBase}/contest-image/{Guid.NewGuid()}_{encodedFileName}";
 
                     bool uploaded = await _fileManager.UploadFileAsync(imagePath, imageFile.ContentStream);
 
@@ -326,7 +327,8 @@ namespace AgoraCertaminaBack.UseCases.Contests
             {
                 try
                 {
-                    string savePath = $"{pathBase}/{Guid.NewGuid()}_{file.Name}"; // Agregar GUID para evitar colisiones
+                    var encodedFileName = Uri.EscapeDataString(file.Name);
+                    string savePath = $"{pathBase}/{Guid.NewGuid()}_{encodedFileName}"; // Agregar GUID para evitar colisiones
                     bool uploaded = await _fileManager.UploadFileAsync(savePath, file.ContentStream);
 
                     if (!uploaded)

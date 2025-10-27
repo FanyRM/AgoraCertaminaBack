@@ -54,5 +54,20 @@ namespace AgoraCertaminaBack.Models.Mappers
             };
         }
 
+        public static Tag ConvertToTagContest(this CustomTagDTO tagDto)
+        {
+            return new Tag
+            {
+                Id = tagDto.Id,
+                Name = tagDto.Name,
+                Color = tagDto.Color
+            };
+        }
+
+        public static List<Tag> ConvertToAllContestsTags(this List<CustomTagDTO> tagDtos)
+        {
+            return tagDtos.Select(tagDto => tagDto.ConvertToTagContest()).ToList();
+        }
+
     }
 }
