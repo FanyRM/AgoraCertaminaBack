@@ -29,6 +29,14 @@ namespace AgoraCertaminaBack.Controllers
                 .ToActionResult();
         }
 
+        [HttpGet("get-all-contests")]
+        public async Task<ActionResult<GenericResponse<List<ContestDTO>>>> GetAllContestsSystem()
+        {
+            return await _contestsUseCases.GetAllContestsSystem.Execute()
+                .ToGenericResponse()
+                .ToActionResult();
+        }
+
         [HttpGet("disabled")]
         public async Task<ActionResult<GenericResponse<List<ContestDTO>>>> GetDisabledContests()
         {

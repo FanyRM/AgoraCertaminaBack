@@ -13,6 +13,7 @@ namespace AgoraCertaminaBack.UseCases
         GetEntityByIdContest GetEntityByIdContest,
         GetS3Files GetS3Files,
         UpdateContest UpdateContest,
-        UpdateStatusContest UpdateStatusContest
+        UpdateStatusContest UpdateStatusContest,
+        GetAllContestsSystem GetAllContestsSystem
     );
 }
