@@ -4,6 +4,7 @@ using AgoraCertaminaBack.Models.Entities;
 using AgoraCertaminaBack.Models.Response;
 using AgoraCertaminaBack.UseCases;
 using AgoraCertaminaBack.UseCases.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ROP;
 
@@ -29,6 +30,7 @@ namespace AgoraCertaminaBack.Controllers
                 .ToActionResult();
         }
 
+        [AllowAnonymous]
         [HttpGet("get-all-contests")]
         public async Task<ActionResult<GenericResponse<List<ContestDTO>>>> GetAllContestsSystem()
         {
@@ -77,6 +79,7 @@ namespace AgoraCertaminaBack.Controllers
                 .ToActionResult();
         }
 
+        [AllowAnonymous]
         [HttpPost("get-file")]
         public async Task<ActionResult<GenericResponse<string>>> GetS3Files([FromBody] FileRequest keyPath)
         {

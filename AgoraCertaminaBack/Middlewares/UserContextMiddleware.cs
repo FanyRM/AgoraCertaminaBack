@@ -4,18 +4,12 @@ using AgoraCertaminaBack.Authorization;
 
 namespace AgoraCertaminaBack.Middlewares
 {
-    public class UserContextMiddleware
+    public class UserContextMiddleware(RequestDelegate _next)
     {
-        private readonly RequestDelegate _next;
 
-        public UserContextMiddleware(RequestDelegate next)
+        public async Task Invoke(HttpContext context, UserRequestContext userContext)
         {
-            _next = next;
-        }
-
-        public async Task InvokeAsync(HttpContext context, UserRequestContext userContext)
-        {
-            if (context.User.Identity?.IsAuthenticated == true)
+            if (!ExcludeRoute(context.Request.Path.ToString()))
             {
                 var userId = context.User.FindFirstValue(ClaimsUser.Identifier);
                 var tenantId = context.User.FindFirstValue(ClaimsUser.OrganizationId);
@@ -38,6 +32,22 @@ namespace AgoraCertaminaBack.Middlewares
             }
 
             await _next(context);
+        }
+
+        private static bool ExcludeRoute(string route)
+        {
+            var ignoreRoutes = new List<string>
+            {
+                "/auth/refresh",
+                "/auth/exchange",
+                "/auth/logout",
+                "/api/health",
+                "/api/get-all-contests",
+                "/api/get-file"
+            };
+
+            // Verifica si la ruta contiene alguno de los patrones definidos
+            return ignoreRoutes.Any(r => route.Contains(r, StringComparison.OrdinalIgnoreCase));
         }
     }
 }
