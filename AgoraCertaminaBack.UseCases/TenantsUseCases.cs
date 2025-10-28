@@ -11,8 +11,8 @@ namespace AgoraCertaminaBack.UseCases
         GetAllTenantCatalogs GetAllTenantCatalogs,
         GetByIdTenantCatalog GetByIdTenantCatalog,
         UpdateTenantCatalogValues UpdateTenantCatalogValues,
-        DeleteTenantCatalog DeleteTenantCatalog
-        //GetByIdFormProgrammedCatalog GetByIdFormProgrammedCatalog
+        DeleteTenantCatalog DeleteTenantCatalog,
+        GetByIdFormCatalog GetByIdFormCatalog
     );
 
     public record class TenantsUseCases(

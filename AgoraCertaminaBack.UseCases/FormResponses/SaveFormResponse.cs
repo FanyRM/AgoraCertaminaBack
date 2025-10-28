@@ -37,7 +37,7 @@ public class SaveFormResponse(
         {
             FormId = request.FormId,
             FormName = form.FormName,
-            TenantId = form.OrganizationId,
+            OrganizationId = form.OrganizationId,
             TenantName = form.TenantName,
             //Status = FormResponseStatus.Draft,
             FieldResponses = request.FieldResponses.Select(fr => new FieldResponse

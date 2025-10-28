@@ -19,7 +19,6 @@ namespace AgoraCertaminaBack.UseCases.Contests
         private async Task<Result<List<Contest>>> getContests()
         {
             var contests = await mongoRepository.FilterByAsync(contest =>
-                contest.IsActive &&
                 contest.OrganizationId == userRequest.OrganizationId);
 
             if (contests == null || !contests.Any())

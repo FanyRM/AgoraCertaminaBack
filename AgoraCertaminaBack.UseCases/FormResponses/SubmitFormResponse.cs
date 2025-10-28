@@ -41,12 +41,21 @@ public class SubmitFormResponse
             if (response == null)
                 return Result.NotFound<string>("Response not found");
 
+<<<<<<< HEAD
             // Validar campos requeridos
             var form = await _formRepository.FindByIdAsync(response.FormId);
             var requiredFields = form.FormFields.Where(f => f.IsRequired).ToList();
+=======
+        // Crear o buscar participante
+        var participant = await _participantRepository.FindOneAsync(p =>
+            p.FirstName == request.ParticipantInfo.FirstName &&
+            p.LastName == request.ParticipantInfo.LastName &&
+            p.OrganizationId == response.OrganizationId);
+>>>>>>> bc5f8d9d6a1f99f4a10a1c1c769086e1d6ba4ae2
 
             foreach (var required in requiredFields)
             {
+<<<<<<< HEAD
                 var hasValue = response.FieldResponses.Any(fr =>
                     fr.FieldId == required.Id &&
                     !string.IsNullOrWhiteSpace(fr.Value));
@@ -154,6 +163,18 @@ public class SubmitFormResponse
         {
             _logger.LogError(ex, "❌ Error al procesar formulario");
             return Result.BadRequest<string>("Error al procesar formulario");
+=======
+                OrganizationId = response.OrganizationId,
+                TenantName = response.TenantName,
+                FirstName = request.ParticipantInfo.FirstName,
+                LastName = request.ParticipantInfo.LastName,
+                Email = request.ParticipantInfo.Email,
+                PhoneNumber = request.ParticipantInfo.Phone,
+                CreatedAt = DateTime.UtcNow,
+                IsActive = true
+            };
+            await _participantRepository.InsertOneAsync(participant);
+>>>>>>> bc5f8d9d6a1f99f4a10a1c1c769086e1d6ba4ae2
         }
     }
 }
