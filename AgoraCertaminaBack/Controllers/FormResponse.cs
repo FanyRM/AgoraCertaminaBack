@@ -10,6 +10,7 @@ namespace AgoraCertaminaBack.Controllers
     [Route("responses")]
     public class FormResponsesController(FormResponsesUseCases _useCases) : Controller
     {
+        [AllowAnonymous]
         [HttpGet("form/{formId}")]
         public async Task<ActionResult<GenericResponse<FormDTO>>> GetFormToResponse(string formId)
         {
@@ -17,7 +18,7 @@ namespace AgoraCertaminaBack.Controllers
                 .ToGenericResponse()
                 .ToActionResult();
         }
-
+        [AllowAnonymous]
         [HttpPost("save")]
         public async Task<ActionResult<GenericResponse<string>>> SaveFormResponse(
             [FromBody] SaveFormResponseRequest request)
@@ -26,7 +27,7 @@ namespace AgoraCertaminaBack.Controllers
                 .ToGenericResponse()
                 .ToActionResult();
         }
-
+        [AllowAnonymous]
         [HttpPost("submit")]
         public async Task<ActionResult<GenericResponse<string>>> SubmitFormResponse(
             [FromBody] SubmitFormResponseRequest request)
