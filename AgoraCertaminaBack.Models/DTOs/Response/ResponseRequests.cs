@@ -1,4 +1,5 @@
-﻿using AgoraCertaminaBack.Models.DTOs.Participant;
+﻿using AgoraCertaminaBack.Models.DTOs.Contest;
+using AgoraCertaminaBack.Models.DTOs.Participant;
 
 namespace AgoraCertaminaBack.Models.DTOs.Response
 {
@@ -31,7 +32,7 @@ namespace AgoraCertaminaBack.Models.DTOs.Response
 
     public class UpdateResponseRequest
     {
-        public List<ResponseTagsDTO>? Tags { get; set; }
+        //public List<TagDTO>? Tags { get; set; }
         public List<FieldDTO>? Fields { get; set; }
         public string? FeedbackKey { get; set; }
     }
