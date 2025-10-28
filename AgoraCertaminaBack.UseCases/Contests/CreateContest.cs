@@ -9,6 +9,7 @@ using AgoraCertaminaBack.UseCases.Shared;
 using AgoraCertaminaBack.UseCases.Tenants;
 using ROP;
 using System.Net;
+using System.Text;
 using System.Text.Json;
 
 namespace AgoraCertaminaBack.UseCases.Contests
@@ -54,38 +55,28 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
         public async Task<Result<Contest>> UploadContestImage(Contest contestRegistered, CreateContestRequest request)
         {
-            // Si no hay ImageUrl en el request, mantener vacío y continuar
             if (string.IsNullOrWhiteSpace(request.ImageUrl))
-            {
                 return contestRegistered.Success();
-            }
 
             try
             {
-                // Deserializar la imagen del contest
                 var imageFile = JsonSerializer.Deserialize<FieldFileRequest>(request.ImageUrl);
 
                 if (imageFile == null)
-                {
                     return Result.Failure<Contest>("Error al deserializar la imagen del contest");
-                }
 
-                // Construir la ruta base para la imagen
-                var encodedFileName = Uri.EscapeDataString(imageFile.Name);
-                string pathBase = $"{contestRegistered.OrganizationName}/{request.SchemaName}/{contestRegistered.ReferenceNumber}";
-                string imagePath = $"{pathBase}/contest-image/{encodedFileName}";
+                string safeName = SanitizeFileName(imageFile.Name);
 
-                // Subir el archivo
+                string name = $"{request.SchemaName}_{contestRegistered.ReferenceNumber}_{safeName}";
+                string pathBase = $"{contestRegistered.OrganizationName}";
+                string imagePath = $"{pathBase}/contest-image_{name}";
+
                 bool saved = await _fileManager.UploadFileAsync(imagePath, imageFile.ContentStream);
 
                 if (!saved)
-                {
                     return Result.Failure<Contest>("Error al guardar la imagen del contest");
-                }
 
-                // Actualizar el contest con la ruta de la imagen
                 contestRegistered.ImageUrl = imagePath;
-
                 return contestRegistered.Success();
             }
             catch (Exception ex)
@@ -96,7 +87,7 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
         public async Task<Result<string>> UploadFilesFromFields(Contest contestRegistered, CreateContestRequest request)
         {
-            string pathBase = $"{contestRegistered.OrganizationName}/{request.SchemaName}/{contestRegistered.ReferenceNumber}";
+            string pathBase = $"{contestRegistered.OrganizationName}";
 
             Contest contestWithFiles = contestRegistered;
 
@@ -119,8 +110,9 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
                     foreach (var file in files)
                     {
-                        var encodedFileName = Uri.EscapeDataString(file.Name);
-                        string savePath = pathBase + "/" + encodedFileName;
+                        string safeName = SanitizeFileName(file.Name);
+                        string name = $"{contestRegistered.ReferenceNumber}_{safeName}";
+                        string savePath = pathBase + "/" + name;
                         bool saved = await _fileManager.UploadFileAsync(savePath, file.ContentStream);
 
                         if (saved) allPaths.Add(savePath);
@@ -145,5 +137,26 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
             return contestWithFiles.Id.Success(HttpStatusCode.Created);
         }
+        private static string SanitizeFileName(string fileName)
+        {
+            if (string.IsNullOrWhiteSpace(fileName))
+                return string.Empty;
+
+            // Normaliza (quita acentos)
+            string normalized = fileName.Normalize(NormalizationForm.FormD);
+            var chars = normalized.Where(c => System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark);
+            string noAccents = new string(chars.ToArray());
+
+            // Reemplaza espacios por "_"
+            noAccents = noAccents.Replace(" ", "_");
+
+            // Elimina caracteres especiales no válidos para archivos
+            foreach (char c in Path.GetInvalidFileNameChars())
+                noAccents = noAccents.Replace(c.ToString(), "");
+
+            // Retorna limpio y normalizado
+            return noAccents;
+        }
+
     }
 }

@@ -10,6 +10,7 @@ using MongoDB.Bson;
 using ROP;
 using System;
 using System.Text.Json;
+using System.Text;
 
 namespace AgoraCertaminaBack.UseCases.Contests
 {
@@ -117,9 +118,9 @@ namespace AgoraCertaminaBack.UseCases.Contests
                 if (imageFile != null && !string.IsNullOrEmpty(imageFile.Content))
                 {
                     // Es una nueva imagen, subirla
-                    var encodedFileName = Uri.EscapeDataString(imageFile.Name);
+                    var name = $"{contest.ReferenceNumber}_{imageFile.Name}";
                     string pathBase = BuildPathBase(contest);
-                    string imagePath = $"{pathBase}/contest-image/{Guid.NewGuid()}_{encodedFileName}";
+                    string imagePath = $"{pathBase}/{Guid.NewGuid()}_{name}";
 
                     bool uploaded = await _fileManager.UploadFileAsync(imagePath, imageFile.ContentStream);
 
@@ -327,8 +328,8 @@ namespace AgoraCertaminaBack.UseCases.Contests
             {
                 try
                 {
-                    var encodedFileName = Uri.EscapeDataString(file.Name);
-                    string savePath = $"{pathBase}/{Guid.NewGuid()}_{encodedFileName}"; // Agregar GUID para evitar colisiones
+                    var name = $"{contest.ReferenceNumber}_{file.Name}";
+                    string savePath = $"{pathBase}/{Guid.NewGuid()}_{name}"; // Agregar GUID para evitar colisiones
                     bool uploaded = await _fileManager.UploadFileAsync(savePath, file.ContentStream);
 
                     if (!uploaded)
@@ -352,7 +353,9 @@ namespace AgoraCertaminaBack.UseCases.Contests
 
         private static string BuildPathBase(Contest contest)
         {
-            return $"{contest.OrganizationName}/{contest.SchemaName}/{contest.ReferenceNumber}";
+            var pathBase = $"{contest.OrganizationName}";
+
+            return $"{pathBase}";
         }
 
         private static IEnumerable<FieldFileRequest>? DeserializeFiles(string fieldValue)
@@ -445,6 +448,27 @@ namespace AgoraCertaminaBack.UseCases.Contests
         private static BsonValue ParseDateValue(string value)
         {
             return DateTime.TryParse(value, out var d) ? BsonValue.Create(d) : BsonNull.Value;
+        }
+
+        private static string SanitizeFileName(string fileName)
+        {
+            if (string.IsNullOrWhiteSpace(fileName))
+                return string.Empty;
+
+            // Normaliza (quita acentos)
+            string normalized = fileName.Normalize(NormalizationForm.FormD);
+            var chars = normalized.Where(c => System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark);
+            string noAccents = new string(chars.ToArray());
+
+            // Reemplaza espacios por "_"
+            noAccents = noAccents.Replace(" ", "_");
+
+            // Elimina caracteres especiales no válidos para archivos
+            foreach (char c in Path.GetInvalidFileNameChars())
+                noAccents = noAccents.Replace(c.ToString(), "");
+
+            // Retorna limpio y normalizado
+            return noAccents;
         }
 
     }
