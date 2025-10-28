@@ -31,13 +31,13 @@ public class SubmitFormResponse(
         var participant = await _participantRepository.FindOneAsync(p =>
             p.FirstName == request.ParticipantInfo.FirstName &&
             p.LastName == request.ParticipantInfo.LastName &&
-            p.OrganizationId == response.TenantId);
+            p.OrganizationId == response.OrganizationId);
 
         if (participant == null)
         {
             participant = new Participant
             {
-                OrganizationId = response.TenantId,
+                OrganizationId = response.OrganizationId,
                 TenantName = response.TenantName,
                 FirstName = request.ParticipantInfo.FirstName,
                 LastName = request.ParticipantInfo.LastName,

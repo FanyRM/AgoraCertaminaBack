@@ -1,14 +1,16 @@
-﻿//using ROP;
-//using AgoraCertaminaBack.Models.DTOs.CustomCatalog;
+﻿using ROP;
+using AgoraCertaminaBack.Models.DTOs.CustomCatalog;
 
-//namespace AgoraCertaminaBack.UseCases.Tenants.TenantCatalogs
-//{
-//    public class GetByIdFormProgrammedCatalog(GetByIdFormProgrammed _getByIdFormProgrammed ,GetByIdTenantCatalog _getByIdTenantCatalog)
-//    {
-//        public async Task<Result<CustomCatalogDTO>> Execute(string formProgrammedId, string catalogId)
-//        {
-//            return await _getByIdFormProgrammed.Execute(formProgrammedId, validateTenant: false)
-//                .Bind(formProgrammed => _getByIdTenantCatalog.Execute(catalogId, formProgrammed.TenantId));
-//        }
-//    }
-//}
+namespace AgoraCertaminaBack.UseCases.Tenants.TenantCatalogs
+{
+    public class GetByIdFormCatalog(
+        GetFormToResponse _getFormToResponse,
+        GetByIdTenantCatalog _getByIdTenantCatalog)
+    {
+        public async Task<Result<CustomCatalogDTO>> Execute(string formId, string catalogId)
+        {
+            return await _getFormToResponse.Execute(formId)
+                .Bind(formDto => _getByIdTenantCatalog.Execute(catalogId, formDto.OrganizationId));
+        }
+    }
+}

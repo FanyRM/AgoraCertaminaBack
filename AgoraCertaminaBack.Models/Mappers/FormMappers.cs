@@ -42,13 +42,14 @@ namespace AgoraCertaminaBack.Models.Mappers
             {
                 Id = form.Id,
                 FormName = form.FormName,
+                OrganizationId = form.OrganizationId, // ← Agregar
                 CreatedAt = form.CreatedAt,
                 LaunchType = launchType,
                 CountSchemaFields = form.FormFields?.Count(field => field.IsActive) ?? 0,
                 Tags = form.Tags?
                     .Where(tag => tag.IsActive)
                     .Select(tag => tag.ToCustomTagDTO())
-                    .ToList() ?? [], // [] en lugar de "new List<CustomTagDTO>()"
+                    .ToList() ?? [],
                 FormFields = form.FormFields?
                     .Where(field => field.IsActive)
                     .Select(field => field.ToCustomFieldDTO())

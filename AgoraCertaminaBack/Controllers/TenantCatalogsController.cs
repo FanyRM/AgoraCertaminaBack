@@ -12,16 +12,17 @@ namespace AgoraCertaminaBack.Controllers
     [Route("tenant-catalogs")]
     public class CustomerCatalogsController(TenantCatalogUseCases _tenantCatalogs) : Controller
     {
-        //COMMENT: ABIERTO PARA RESPONDER LOS FORMULARIOS QUE USEN OPCIONES DE CATALOGOS
-        //[AllowAnonymous]
-        //[HttpGet("catalog/{catalogId}")]
-        //public async Task<ActionResult<GenericResponse<List<CustomCatalogDTO>>>> GetByIdTenantCatalog(string catalogId, [FromQuery] string formProgrammedId)
-        //{
-        //    return await _tenantCatalogs.GetByIdFormProgrammedCatalog.Execute(formProgrammedId, catalogId)
-        //        .ToGenericResponse()
-        //        .ToActionResult();
-        //}
-
+        // COMMENT: ABIERTO PARA RESPONDER LOS FORMULARIOS QUE USEN OPCIONES DE CATALOGOS
+        [AllowAnonymous]
+        [HttpGet("forms/{formId}/catalog/{catalogId}")]
+        public async Task<ActionResult<GenericResponse<CustomCatalogDTO>>> GetCatalogByForm(
+            string formId,
+            string catalogId)
+        {
+            return await _tenantCatalogs.GetByIdFormCatalog.Execute(formId, catalogId)
+                .ToGenericResponse()
+                .ToActionResult();
+        }
         //[HasPermissionOnAction(Constants.Actions.AddTenantCatalogs)]
         [AllowAnonymous]
         [HttpPost("")]

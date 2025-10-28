@@ -12,7 +12,7 @@ namespace AgoraCertaminaBack.Models.Entities
         public string Id { get; set; } = string.Empty;
 
         [BsonElement("tenant_id")]
-        public string TenantId { get; set; } = string.Empty;
+        public string OrganizationId { get; set; } = string.Empty;
 
         [BsonElement("tenant_name")]
         public string TenantName { get; set; } = string.Empty;
