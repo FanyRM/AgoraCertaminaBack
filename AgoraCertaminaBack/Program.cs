@@ -6,6 +6,7 @@ using AgoraCertaminaBack.Middlewares;
 using AgoraCertaminaBack.Models.General;
 using AgoraCertaminaBack.Services;
 using AgoraCertaminaBack.UseCases;
+using AgoraCertaminaBack.Services.Interfaces;
 using Amazon;
 using Amazon.CognitoIdentityProvider;
 using Amazon.Runtime;
@@ -77,6 +78,9 @@ builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddCustomAuthorization(cognitoSettings);
 builder.Services.AddScoped<UserRequestContext>();
+builder.Services.Configure<EmailSettings>(
+    builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddSwaggerGen(options =>
 {
