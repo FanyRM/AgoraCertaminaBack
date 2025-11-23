@@ -26,7 +26,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
             // Catálogos
             data.Catalogs.Add(new CreateCustomCatalogRequest
             {
-                Name = "Calificación",
+                Name = "Calificacion",
                 Values = new List<string>
                 {
                     "1 - Muy malo",
@@ -58,7 +58,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
 
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Calificación General",
+                Name = "Calificacion General",
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 Order = 2,
