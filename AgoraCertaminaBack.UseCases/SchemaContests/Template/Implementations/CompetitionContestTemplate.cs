@@ -39,6 +39,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Name = "Disciplina",
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
+                IsBase = false,
                 CatalogId = "DISCIPLINA_DEPORTIVA"
             });
 
@@ -46,6 +47,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Reglamento deportivo",
                 Type = FieldTypeEnum.Archive,
+                IsBase = false,
                 IsRequired = false
             });
 
@@ -53,6 +55,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Duración del encuentro",
                 Type = FieldTypeEnum.String,
+                IsBase = false,
                 IsRequired = true
             });
 
@@ -60,6 +63,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Requisitos de seguridad",
                 Type = FieldTypeEnum.String,
+                IsBase = false,
                 IsRequired = false
             });
 

@@ -1,7 +1,4 @@
-﻿using AgoraCertaminaBack.Models.DTOs.Form.Templates;
-using AgoraCertaminaBack.Models.General;
-using AgoraCertaminaBack.UseCases.Forms.Templates.Implementations;
-using AgoraCertaminaBack.UseCases.Forms.Templates;
+﻿using AgoraCertaminaBack.Models.General;
 using AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations;
 
 namespace AgoraCertaminaBack.UseCases.SchemaContests.Template
@@ -37,7 +34,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template
             return new EmptyContestTemplate();
         }
 
-        public List<ContestTemplateInfo> GetAvailableTemplates()
+        public List<ContestTemplateInfo> GetAvailableContestTemplates()
         {
             return _factories.Select(kvp =>
             {

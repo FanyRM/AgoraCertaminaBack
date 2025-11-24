@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AgoraCertaminaBack.Models.DTOs.Form.Templates;
+using AgoraCertaminaBack.Models.General;
 
 namespace AgoraCertaminaBack.Models.DTOs.SchemaContest
 {
@@ -16,5 +18,11 @@ namespace AgoraCertaminaBack.Models.DTOs.SchemaContest
     {
         public required string SchemaName { get; set; }
         public required List<SchemaTagRequest> Tags { get; set; }
+    }
+
+    public class CreateContestTemplateRequest
+    {
+        public required string ContestName { get; set; }
+        public required CategoriesEnum ContestCategory { get; set; }
     }
 }

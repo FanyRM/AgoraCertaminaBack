@@ -15,12 +15,10 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
         {
             var data = new ContestTemplateData();
 
-            // Tags
             data.Tags.Add(new CustomTagRequest { Name = "Talento", Color = "rose", Category = TagCategory.Contest });
             data.Tags.Add(new CustomTagRequest { Name = "Artístico", Color = "red", Category = TagCategory.Contest });
             data.Tags.Add(new CustomTagRequest { Name = "Creatividad", Color = "purple", Category = TagCategory.Contest });
 
-            // Catalogs
             data.Catalogs.Add(new CreateCustomCatalogRequest
             {
                 Name = CATALOG_TIPO_TALENTO,
@@ -35,12 +33,12 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 }
             });
 
-            // Fields
             data.Fields.Add(new FieldRequest
             {
                 Name = "Tipo de talento",
                 Type = FieldTypeEnum.CustomCatalog,
                 CatalogId = "TIPO_TALENTO",
+                IsBase = false,
                 IsRequired = true
             });
 
@@ -48,6 +46,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Duración máxima de presentación",
                 Type = FieldTypeEnum.String,
+                IsBase = false,
                 IsRequired = true
             });
 
@@ -55,6 +54,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Requisitos de vestuario",
                 Type = FieldTypeEnum.String,
+                IsBase = false,
                 IsRequired = false
             });
 
@@ -62,6 +62,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Pista o archivo musical",
                 Type = FieldTypeEnum.Archive,
+                IsBase = false,
                 IsRequired = false
             });
 
@@ -69,6 +70,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Video demostrativo",
                 Type = FieldTypeEnum.Archive,
+                IsBase = false,
                 IsRequired = false
             });
 

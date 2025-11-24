@@ -51,14 +51,16 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Name = "Tipo de proyecto",
                 Type = FieldTypeEnum.CustomCatalog,
                 CatalogId = "TIPO_PROYECTO_TECNOLOGICO",
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false
             });
 
             data.Fields.Add(new FieldRequest
             {
                 Name = "Duración del proyecto (meses)",
                 Type = FieldTypeEnum.String,
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false
             });
 
             data.Fields.Add(new FieldRequest
@@ -66,13 +68,16 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Name = "Formato de entrega",
                 Type = FieldTypeEnum.CustomCatalog,
                 CatalogId = "FORMATO_ENTREGABLE_TECNOLOGICO",
+                IsBase = false,
                 IsRequired = true
+
             });
 
             data.Fields.Add(new FieldRequest
             {
                 Name = "Requerimientos técnicos",
                 Type = FieldTypeEnum.String,
+                IsBase = false,
                 IsRequired = false
             });
 
@@ -80,6 +85,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Documentación técnica necesaria",
                 Type = FieldTypeEnum.Archive,
+                IsBase = false,
                 IsRequired = false
             });
 

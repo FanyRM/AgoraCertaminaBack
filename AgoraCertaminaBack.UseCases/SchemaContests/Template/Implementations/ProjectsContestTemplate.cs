@@ -37,6 +37,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Name = "Tipo de proyecto",
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
+                IsBase = false,
                 CatalogId = "TIPO_PROYECTO"
             });
 
@@ -44,14 +45,16 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Duración estimada del proyecto",
                 Type = FieldTypeEnum.String,
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false,
             });
 
             data.Fields.Add(new FieldRequest
             {
                 Name = "Objetivo general del proyecto",
                 Type = FieldTypeEnum.String,
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false,
             });
 
             return data;

@@ -16,9 +16,9 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
         {
             var data = new ContestTemplateData();
 
-            data.Tags.Add(new CustomTagRequest { Name = "Artesanías", Color = "amber", Category = TagCategory.Contest });
-            data.Tags.Add(new CustomTagRequest { Name = "Creatividad manual", Color = "emerald", Category = TagCategory.Contest });
-            data.Tags.Add(new CustomTagRequest { Name = "Diseño", Color = "violet", Category = TagCategory.Contest });
+            data.Tags.Add(new CustomTagRequest { Name = "Artesanías", Color = "yellow", Category = TagCategory.Contest });
+            data.Tags.Add(new CustomTagRequest { Name = "Creatividad manual", Color = "green", Category = TagCategory.Contest });
+            data.Tags.Add(new CustomTagRequest { Name = "Diseño", Color = "purple", Category = TagCategory.Contest });
 
             data.Catalogs.Add(new CreateCustomCatalogRequest
             {
@@ -52,6 +52,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Name = "Material utilizado",
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
+                IsBase = false,
                 CatalogId = "MATERIAL_PERMITIDO"
             });
 
@@ -59,14 +60,16 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Dimensiones máximas de la pieza",
                 Type = FieldTypeEnum.String,
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false,
             });
 
             data.Fields.Add(new FieldRequest
             {
                 Name = "Peso máximo de la pieza",
                 Type = FieldTypeEnum.String,
-                IsRequired = false
+                IsRequired = false,
+                IsBase = false,
             });
 
             data.Fields.Add(new FieldRequest
@@ -74,6 +77,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Name = "Tipo de entrega",
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
+                IsBase = false,
                 CatalogId = "TIPO_ENTREGA"
             });
 
@@ -81,14 +85,16 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Premio y recompensas",
                 Type = FieldTypeEnum.String,
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false,
             });
 
             data.Fields.Add(new FieldRequest
             {
                 Name = "Lineamientos",
                 Type = FieldTypeEnum.Archive,
-                IsRequired = false
+                IsRequired = false,
+                IsBase = false,
             });
 
             return data;

@@ -15,12 +15,10 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
         {
             var data = new ContestTemplateData();
 
-            // Tags
             data.Tags.Add(new CustomTagRequest { Name = "Conocimiento", Color = "indigo", Category = TagCategory.Contest });
             data.Tags.Add(new CustomTagRequest { Name = "Académico", Color = "blue", Category = TagCategory.Contest });
             data.Tags.Add(new CustomTagRequest { Name = "Educativo", Color = "teal", Category = TagCategory.Contest });
 
-            // Catalogs
             data.Catalogs.Add(new CreateCustomCatalogRequest
             {
                 Name = CATALOG_AREA_CONOCIMIENTO,
@@ -36,12 +34,12 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 }
             });
 
-            // Fields
             data.Fields.Add(new FieldRequest
             {
                 Name = "Área evaluada",
                 Type = FieldTypeEnum.CustomCatalog,
                 CatalogId = "AREA_CONOCIMIENTO",
+                IsBase = false,
                 IsRequired = true
             });
 
@@ -49,6 +47,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Duración de la prueba",
                 Type = FieldTypeEnum.String,
+                IsBase = false,
                 IsRequired = true
             });
 
@@ -56,6 +55,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Reglamento",
                 Type = FieldTypeEnum.Archive,
+                IsBase = false,
                 IsRequired = false
             });
 
@@ -63,7 +63,8 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Formato del examen",
                 Type = FieldTypeEnum.String,
-                IsRequired = true
+                IsRequired = true,
+                IsBase = false,
             });
 
             return data;

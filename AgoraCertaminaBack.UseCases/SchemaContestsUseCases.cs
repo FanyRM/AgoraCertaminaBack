@@ -13,11 +13,13 @@ namespace AgoraCertaminaBack.UseCases
     public record class SchemaContestsUseCases
     (
         CreateSchema CreateSchema,
+        CreateContestTemplate CreateContestTemplate,
         DeleteSchemaById DeleteSchemaById,
         GetAllSchemas GetAllSchemas,
         GetByIdSchema GetByIdSchema,
         GetDataSchemaById GetDataSchemaById,
         GetEntityByIdSchema GetEntityByIdSchema,
+        GetAvailableContestTemplates GetAvailableContestTemplates,
         UpdateSchema UpdateSchema
     );
 
