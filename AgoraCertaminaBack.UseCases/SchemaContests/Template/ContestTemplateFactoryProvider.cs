@@ -11,7 +11,6 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template
         {
             _factories = new Dictionary<CategoriesEnum, Func<IContestTemplateFactory>>
             {
-                { CategoriesEnum.Empty, () => new EmptyContestTemplate() },
                 { CategoriesEnum.Crafts, () => new CraftsContestTemplate() },
                 { CategoriesEnum.Competition, () => new CompetitionContestTemplate() },
                 { CategoriesEnum.Projects, () => new ProjectsContestTemplate() },
@@ -31,7 +30,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template
                 return factoryFunc();
             }
 
-            return new EmptyContestTemplate();
+            return null;
         }
 
         public List<ContestTemplateInfo> GetAvailableContestTemplates()

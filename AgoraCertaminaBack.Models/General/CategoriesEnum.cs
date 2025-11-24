@@ -2,7 +2,6 @@
 {
     public enum CategoriesEnum
     {
-        Empty = 0,
         Literature = 1, 
         Crafts = 2, 
         Technology = 3, 
