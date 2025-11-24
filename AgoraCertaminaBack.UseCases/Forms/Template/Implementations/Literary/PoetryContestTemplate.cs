@@ -3,46 +3,55 @@ using AgoraCertaminaBack.Models.DTOs.CustomField;
 using AgoraCertaminaBack.Models.DTOs.CustomTag;
 using AgoraCertaminaBack.Models.DTOs.Form.Templates;
 using AgoraCertaminaBack.Models.General;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
+namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Literary
 {
-    /// <summary>
-    /// Plantilla para formularios de retroalimentación general
-    /// </summary>
-    public class FeedbackFormTemplate : IFormTemplateFactory
+    public class PoetryContestTemplate : IFormTemplateFactory
     {
+        public string GetTemplateId() => "literary-poetry";
+
+        public string GetName() => "Concurso de Poesía";
+
+        public FormTemplateCategory GetCategory() => FormTemplateCategory.LiteraryContest;
+
+        public string GetDescription() =>
+            "Plantilla especializada para concursos de poesía con categorías de verso libre, soneto, haiku, etc.";
+
         public FormTemplateData GetTemplateData()
         {
             var data = new FormTemplateData();
 
-            // Tags
             data.Tags.Add(new CustomTagRequest
             {
-                Name = "Feedback",
-                Color = "#F59E0B",
+                Name = "Poesía",
+                Color = "red",
                 Category = TagCategory.Form
             });
 
-            // Catálogos
             data.Catalogs.Add(new CreateCustomCatalogRequest
             {
-                Name = "Calificacion",
+                Name = "Tipo de Poesía",
                 Values = new List<string>
                 {
-                    "1 - Muy malo",
-                    "2 - Malo",
-                    "3 - Regular",
-                    "4 - Bueno",
-                    "5 - Excelente"
+                    "Verso Libre",
+                    "Soneto",
+                    "Haiku",
+                    "Décima",
+                    "Romance",
+                    "Elegía"
                 }
             });
 
-            // Campos
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Nombre",
+                Name = "Nombre del Poeta",
                 Type = FieldTypeEnum.String,
-                IsRequired = false,
+                IsRequired = true,
                 Order = 0,
                 StaticValue = ""
             });
@@ -51,50 +60,40 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
             {
                 Name = "Email",
                 Type = FieldTypeEnum.String,
-                IsRequired = false,
+                IsRequired = true,
                 Order = 1,
                 StaticValue = ""
             });
 
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Calificacion General",
-                Type = FieldTypeEnum.CustomCatalog,
-                IsRequired = true,
-                Order = 2,
-                StaticValue = "",
-                CatalogId = "CALIFICACION_PLACEHOLDER"
-            });
-
-            data.Fields.Add(new CustomFieldRequest
-            {
-                Name = "Comentarios",
+                Name = "Título del Poema",
                 Type = FieldTypeEnum.String,
                 IsRequired = true,
-                Order = 3,
+                Order = 2,
                 StaticValue = ""
             });
 
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Fecha",
-                Type = FieldTypeEnum.Date,
+                Name = "Tipo de Poesía",
+                Type = FieldTypeEnum.CustomCatalog,
+                IsRequired = true,
+                Order = 3,
+                StaticValue = "",
+                CatalogId = "TIPO_DE_POESÍA_PLACEHOLDER"
+            });
+
+            data.Fields.Add(new CustomFieldRequest
+            {
+                Name = "Poema Completo",
+                Type = FieldTypeEnum.String,
                 IsRequired = true,
                 Order = 4,
                 StaticValue = ""
             });
 
             return data;
-        }
-
-        public FormTemplateCategory GetCategory()
-        {
-            return FormTemplateCategory.FeedbackForm;
-        }
-
-        public string GetDescription()
-        {
-            return "Formulario simple de retroalimentación con calificación y comentarios";
         }
     }
 }
