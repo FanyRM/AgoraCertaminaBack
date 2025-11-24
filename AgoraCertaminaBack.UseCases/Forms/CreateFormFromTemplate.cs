@@ -61,7 +61,7 @@ namespace AgoraCertaminaBack.UseCases.Forms
             Console.WriteLine(new string('=', 80));
 
             // 1. Obtener la fábrica apropiada
-            var factory = _templateProvider.GetFactory(request.TemplateCategory);
+            var factory = _templateProvider.GetFactory(request.TemplateId);
             var templateData = factory.GetTemplateData();
 
             Console.WriteLine($"\n[TEMPLATE] Plantilla cargada:");

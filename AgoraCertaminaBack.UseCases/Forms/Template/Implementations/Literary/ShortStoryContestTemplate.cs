@@ -3,98 +3,88 @@ using AgoraCertaminaBack.Models.DTOs.CustomField;
 using AgoraCertaminaBack.Models.DTOs.CustomTag;
 using AgoraCertaminaBack.Models.DTOs.Form.Templates;
 using AgoraCertaminaBack.Models.General;
+using AgoraCertaminaBack.UseCases.Forms.Templates;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
+namespace AgoraCertaminaBack.UseCases.Forms.Template.Implementations.Literary
 {
-    /// <summary>
-    /// Plantilla para formularios de retroalimentación general
-    /// </summary>
-    public class FeedbackFormTemplate : IFormTemplateFactory
+    public class ShortStoryContestTemplate : IFormTemplateFactory
     {
+        public string GetTemplateId() => "literary-short-story";
+
+        public string GetName() => "Concurso de Cuento Corto";
+
+        public FormTemplateCategory GetCategory() => FormTemplateCategory.LiteraryContest;
+
+        public string GetDescription() =>
+            "Plantilla para concursos de narrativa corta con límite de palabras y género literario";
+
         public FormTemplateData GetTemplateData()
         {
             var data = new FormTemplateData();
 
-            // Tags
             data.Tags.Add(new CustomTagRequest
             {
-                Name = "Feedback",
+                Name = "Narrativa",
                 Color = "#F59E0B",
                 Category = TagCategory.Form
             });
 
-            // Catálogos
             data.Catalogs.Add(new CreateCustomCatalogRequest
             {
-                Name = "Calificacion",
+                Name = "Género Narrativo",
                 Values = new List<string>
                 {
-                    "1 - Muy malo",
-                    "2 - Malo",
-                    "3 - Regular",
-                    "4 - Bueno",
-                    "5 - Excelente"
+                    "Realismo",
+                    "Ciencia Ficción",
+                    "Fantasía",
+                    "Terror",
+                    "Romance"
                 }
             });
 
-            // Campos
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Nombre",
+                Name = "Nombre del Autor",
                 Type = FieldTypeEnum.String,
-                IsRequired = false,
+                IsRequired = true,
                 Order = 0,
                 StaticValue = ""
             });
 
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Email",
+                Name = "Título del Cuento",
                 Type = FieldTypeEnum.String,
-                IsRequired = false,
+                IsRequired = true,
                 Order = 1,
                 StaticValue = ""
             });
 
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Calificacion General",
+                Name = "Género Narrativo",
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 Order = 2,
                 StaticValue = "",
-                CatalogId = "CALIFICACION_PLACEHOLDER"
+                CatalogId = "GÉNERO_NARRATIVO_PLACEHOLDER"
             });
 
             data.Fields.Add(new CustomFieldRequest
             {
-                Name = "Comentarios",
-                Type = FieldTypeEnum.String,
+                Name = "Archivo del Cuento",
+                Type = FieldTypeEnum.Archive,
                 IsRequired = true,
                 Order = 3,
                 StaticValue = ""
             });
 
-            data.Fields.Add(new CustomFieldRequest
-            {
-                Name = "Fecha",
-                Type = FieldTypeEnum.Date,
-                IsRequired = true,
-                Order = 4,
-                StaticValue = ""
-            });
-
             return data;
-        }
-
-        public FormTemplateCategory GetCategory()
-        {
-            return FormTemplateCategory.FeedbackForm;
-        }
-
-        public string GetDescription()
-        {
-            return "Formulario simple de retroalimentación con calificación y comentarios";
         }
     }
 }

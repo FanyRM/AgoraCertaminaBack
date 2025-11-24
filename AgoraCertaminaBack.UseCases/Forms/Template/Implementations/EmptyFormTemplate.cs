@@ -21,5 +21,15 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
         {
             return "Formulario vacío - Sin campos predefinidos";
         }
+
+        public string GetTemplateId()
+        {
+            return "EmptyFormTemplate";
+        }
+
+        public string GetName()
+        {
+            return "Empty Form Template";
+        }
     }
 }

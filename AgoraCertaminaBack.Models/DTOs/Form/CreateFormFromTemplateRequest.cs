@@ -2,12 +2,15 @@
 
 namespace AgoraCertaminaBack.Models.DTOs.Form
 {
-    /// <summary>
-    /// Request para crear un formulario desde una plantilla predefinida
-    /// </summary>
     public class CreateFormFromTemplateRequest
     {
-        public required string FormName { get; set; }
-        public required FormTemplateCategory TemplateCategory { get; set; }
+        public string FormName { get; set; } = string.Empty;
+
+        // NUEVO: Ahora usamos TemplateId en lugar de Category directamente
+        public string TemplateId { get; set; } = string.Empty;
+
+        // OPCIONAL: Mantener por compatibilidad hacia atrás (deprecated)
+        [Obsolete("Use TemplateId instead")]
+        public FormTemplateCategory? TemplateCategory { get; set; }
     }
 }

@@ -9,6 +9,16 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates
     public interface IFormTemplateFactory
     {
         /// <summary>
+        /// ID único de la plantilla (nuevo, para identificar plantillas específicas)
+        /// </summary>
+        string GetTemplateId();
+
+        /// <summary>
+        /// Nombre amigable de la plantilla (nuevo)
+        /// </summary>
+        string GetName();
+
+        /// <summary>
         /// Obtiene los datos de la plantilla (tags, catálogos y campos)
         /// </summary>
         FormTemplateData GetTemplateData();
