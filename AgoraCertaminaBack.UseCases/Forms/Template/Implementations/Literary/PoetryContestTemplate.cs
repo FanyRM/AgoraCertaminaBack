@@ -11,9 +11,6 @@ using System.Threading.Tasks;
 
 namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Literary
 {
-    /// <summary>
-    /// Plantilla específica para concursos de POESÍA
-    /// </summary>
     public class PoetryContestTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "literary-poetry";
@@ -32,7 +29,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Literary
             data.Tags.Add(new CustomTagRequest
             {
                 Name = "Poesía",
-                Color = "#8B5CF6",
+                Color = "red",
                 Category = TagCategory.Form
             });
 

@@ -7,9 +7,7 @@ using AgoraCertaminaBack.UseCases.Forms.Templates;
 
 namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Talent
 {
-    /// <summary>
-    /// Plantilla para concursos de CANTO
-    /// </summary>
+    //COMMENT: Singing Talent Template
     public class SingingTalentTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "talent-singing";
@@ -128,9 +126,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Talent
         }
     }
 
-    /// <summary>
-    /// Plantilla para concursos de DANZA
-    /// </summary>
+    //COMMENT: Dance Talent Template
     public class DanceTalentTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "talent-dance";
@@ -247,9 +243,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Talent
         }
     }
 
-    /// <summary>
-    /// Plantilla para concursos de MÚSICA INSTRUMENTAL
-    /// </summary>
+    //COMMENT: Music Talent Template
     public class MusicTalentTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "talent-music";
@@ -369,9 +363,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Talent
         }
     }
 
-    /// <summary>
-    /// Plantilla para concursos de TEATRO
-    /// </summary>
+    //COMMENT: Theater Talent Template
     public class TheaterTalentTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "talent-theater";

@@ -7,9 +7,7 @@ using AgoraCertaminaBack.UseCases.Forms.Templates;
 
 namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Art
 {
-    /// <summary>
-    /// Plantilla para concursos de PINTURA
-    /// </summary>
+    //COMMENT: Plantilla para concursos de PINTURA
     public class PaintingContestTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "art-painting";
@@ -122,9 +120,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Art
         }
     }
 
-    /// <summary>
-    /// Plantilla para concursos de FOTOGRAFÍA
-    /// </summary>
+    //COMMENT: Plantilla para concursos de FOTOGRAFÍA
     public class PhotographyContestTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "art-photography";
@@ -238,9 +234,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Art
         }
     }
 
-    /// <summary>
-    /// Plantilla para concursos de ARTE DIGITAL
-    /// </summary>
+    //COMMENT: Plantilla para concursos de ARTE DIGITAL
     public class DigitalArtContestTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "art-digital";
@@ -356,9 +350,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Art
         }
     }
 
-    /// <summary>
-    /// Plantilla para concursos de ESCULTURA
-    /// </summary>
+    //COMMENT: Plantilla para concursos de ESCULTURA
     public class SculptureContestTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "art-sculpture";

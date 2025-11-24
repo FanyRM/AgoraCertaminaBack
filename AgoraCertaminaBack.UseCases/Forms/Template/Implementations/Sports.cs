@@ -7,9 +7,7 @@ using AgoraCertaminaBack.UseCases.Forms.Templates;
 
 namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Sports
 {
-    /// <summary>
-    /// Plantilla para DEPORTES INDIVIDUALES
-    /// </summary>
+    //COMMENT: Plantilla para DEPORTES INDIVIDUALES
     public class IndividualSportsTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "sports-individual";
@@ -124,9 +122,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Sports
         }
     }
 
-    /// <summary>
-    /// Plantilla para DEPORTES DE EQUIPO
-    /// </summary>
+    //COMMENT: Plantilla para DEPORTES DE EQUIPO
     public class TeamSportsTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "sports-team";
@@ -241,9 +237,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Sports
         }
     }
 
-    /// <summary>
-    /// Plantilla para ATLETISMO
-    /// </summary>
+    //COMMENT: Plantilla para ATLETISMO
     public class AthleticsTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "sports-athletics";
@@ -361,9 +355,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Sports
         }
     }
 
-    /// <summary>
-    /// Plantilla para ARTES MARCIALES
-    /// </summary>
+    //COMMENT: Plantilla para ARTES MARCIALES Y COMBATE
     public class MartialArtsTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "sports-martial-arts";

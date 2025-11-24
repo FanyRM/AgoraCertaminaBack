@@ -2,9 +2,7 @@
 
 namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations
 {
-    /// <summary>
-    /// Plantilla vacía - comportamiento por defecto (sin campos predefinidos)
-    /// </summary>
+    //COMMENTl: Plantilla de formulario vacío sin campos predefinidos.
     public class EmptyFormTemplate : IFormTemplateFactory
     {
         public FormTemplateData GetTemplateData()

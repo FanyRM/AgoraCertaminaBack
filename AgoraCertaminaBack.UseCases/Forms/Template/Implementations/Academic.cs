@@ -7,9 +7,7 @@ using AgoraCertaminaBack.UseCases.Forms.Templates;
 
 namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Academic
 {
-    /// <summary>
     /// Plantilla para competencias de MATEMÁTICAS
-    /// </summary>
     public class MathCompetitionTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "academic-math";
@@ -114,9 +112,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Academic
         }
     }
 
-    /// <summary>
-    /// Plantilla para competencias de CIENCIAS
-    /// </summary>
+    //COMMENT: Plantilla para competencias de CIENCIAS
     public class ScienceCompetitionTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "academic-science";
@@ -230,9 +226,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Academic
         }
     }
 
-    /// <summary>
-    /// Plantilla para competencias de DEBATE
-    /// </summary>
+    //COMMENT: Plantilla para competencias de DEBATE
     public class DebateCompetitionTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "academic-debate";
@@ -336,9 +330,8 @@ namespace AgoraCertaminaBack.UseCases.Forms.Templates.Implementations.Academic
         }
     }
 
-    /// <summary>
-    /// Plantilla para competencias de ROBÓTICA
-    /// </summary>
+
+    //COMMENT: Plantilla para competencias de ROBÓTICA
     public class RoboticsCompetitionTemplate : IFormTemplateFactory
     {
         public string GetTemplateId() => "academic-robotics";

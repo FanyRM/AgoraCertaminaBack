@@ -30,7 +30,7 @@ namespace AgoraCertaminaBack.UseCases.Forms.Template.Implementations.Literary
             data.Tags.Add(new CustomTagRequest
             {
                 Name = "Narrativa",
-                Color = "#F59E0B",
+                Color = "blue",
                 Category = TagCategory.Form
             });
 
