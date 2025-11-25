@@ -53,7 +53,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "MATERIAL_PERMITIDO"
+                CatalogId = "MATERIAL_PERMITIDO_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest
@@ -78,7 +78,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "TIPO_ENTREGA"
+                CatalogId = "TIPO_DE_ENTREGA_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest

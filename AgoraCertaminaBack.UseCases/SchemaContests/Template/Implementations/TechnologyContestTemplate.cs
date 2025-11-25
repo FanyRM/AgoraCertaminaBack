@@ -50,7 +50,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Tipo de proyecto",
                 Type = FieldTypeEnum.CustomCatalog,
-                CatalogId = "TIPO_PROYECTO_TECNOLOGICO",
+                CatalogId = "TIPO_DE_PROYECTO_TECNOLÓGICO_PLACEHOLDER",
                 IsRequired = true,
                 IsBase = false
             });
@@ -67,7 +67,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Formato de entrega",
                 Type = FieldTypeEnum.CustomCatalog,
-                CatalogId = "FORMATO_ENTREGABLE_TECNOLOGICO",
+                CatalogId = "FORMATO_DE_ENTREGABLE_TECNOLÓGICO_PLACEHOLDER",
                 IsBase = false,
                 IsRequired = true
 

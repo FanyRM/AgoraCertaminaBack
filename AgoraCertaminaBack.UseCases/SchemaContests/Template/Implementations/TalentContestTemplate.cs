@@ -37,7 +37,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Tipo de talento",
                 Type = FieldTypeEnum.CustomCatalog,
-                CatalogId = "TIPO_TALENTO",
+                CatalogId = "TIPO_DE_TALENTO_PLACEHOLDER",
                 IsBase = false,
                 IsRequired = true
             });

@@ -38,7 +38,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "TIPO_PROYECTO"
+                CatalogId = "TIPO_DE_PROYECTO_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest

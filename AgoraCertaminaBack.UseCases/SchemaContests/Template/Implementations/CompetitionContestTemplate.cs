@@ -40,7 +40,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "DISCIPLINA_DEPORTIVA"
+                CatalogId = "DISCIPLINA_DEPORTIVA_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest

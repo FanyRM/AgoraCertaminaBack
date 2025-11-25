@@ -38,7 +38,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
             {
                 Name = "Área evaluada",
                 Type = FieldTypeEnum.CustomCatalog,
-                CatalogId = "AREA_CONOCIMIENTO",
+                CatalogId = "AREA_DE_CONOCIMIENTO_PLACEHOLDER",
                 IsBase = false,
                 IsRequired = true
             });

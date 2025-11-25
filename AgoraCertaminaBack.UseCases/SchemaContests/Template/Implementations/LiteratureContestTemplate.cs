@@ -11,7 +11,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
     {
         private const string CATALOG_GENERO_LITERARIO = "Género literario";
         private const string CATALOG_SUBGENERO_LITERARIO = "Subgénero literario";
-        private const string CATALOG_FORMATO_FILE = "Formato de archivo a recibir";
+        private const string CATALOG_FORMATO_FILE = "Formato de archivo";
         public ContestTemplateData GetContestTemplateData()
         {
             var data = new ContestTemplateData();
@@ -90,7 +90,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "GENERO_LITERARIO"
+                CatalogId = "GÉNERO_LITERARIO_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest
@@ -99,7 +99,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "SUBGENERO_LITERARIO"
+                CatalogId = "SUBGÉNERO_LITERARIO_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest
@@ -132,7 +132,7 @@ namespace AgoraCertaminaBack.UseCases.SchemaContests.Template.Implementations
                 Type = FieldTypeEnum.CustomCatalog,
                 IsRequired = true,
                 IsBase = false,
-                CatalogId = "FORMATO_FILE"
+                CatalogId = "FORMATO_DE_ARCHIVO_PLACEHOLDER"
             });
 
             data.Fields.Add(new FieldRequest
